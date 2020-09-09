@@ -1,0 +1,450 @@
+/* ----------------------------------------------------------------
+	Page-caption BEGIN
+-----------------------------------------------------------------*/
+.head-page {
+	&__navigation-desktop {
+		padding-top: 20px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		max-width: 870px;
+		height: 60px;
+
+		li {
+			margin-right: 5px;
+
+			a {
+				font-size: 18px;
+				line-height: 50px;
+				color: #FFFFFF;
+				text-shadow: 0px 0px 20px #FF003D;
+				// font-family: "RalewayBold";
+				letter-spacing: 0.04em;
+			}
+
+			a:hover {
+				font-family: "RalewayBold";
+				color: #FF003D;
+				// letter-spacing: 0.007em;
+			}
+		}
+	}
+
+
+	&__caption-wrapper {
+		height: 674px;
+		background: url(styles/images/head-page/page-caption_bg.png) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	&__container-for-describe {
+		margin: 105px 0 80px;
+
+		h1 {
+			font-family: "RalewayBold";
+			font-size: 60px;
+			line-height: 1.17em;
+
+			background: linear-gradient(90deg, rgba(200, 177, 228, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(240, 202, 211, 1) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			filter: drop-shadow(0px 0px 2px #FF0000);
+		}
+
+	}
+
+	&__container-for-list {
+		margin: 45px 0 50px;
+
+		li {
+			display: block;
+			font-family: "RalewayRegular";
+			font-size: 24px;
+			line-height: 1.5em;
+			color: #FFE6E6;
+		}
+	}
+
+	&__button-1 {
+		margin: 0 0 0 40px;
+		width: 280px;
+		height: 50px;
+		background: linear-gradient(88.48deg, #FF0000 -19.67%, #822EED 100%);
+		border: 0;
+		font-size: 16px;
+		line-height: 1.19em;
+		color: #FFFFFF;
+	}
+
+	&__button-1:hover {
+		cursor: pointer;
+		filter: drop-shadow(0px 10px 20px rgba(255, 0, 61, 0.8));
+	}
+
+	&__container-for-items {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		position: relative;
+		padding: 0 10px;
+		width: 370px;
+		height: 180px;
+		background: linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.head-page__item-image-1,
+		.head-page__item-image-2,
+		.head-page__item-image-3 {
+			position: absolute;
+			top: -47px;
+			right: 60px;
+			width: 80px;
+			height: 80px;
+			filter: drop-shadow(0px 0px 7px #FFFFFF);
+		}
+
+		.head-page__item-image-1 {
+			background: url(styles/images/icons/icon_growth.svg) no-repeat center center;
+		}
+
+		.head-page__item-image-2 {
+			background: url(styles/images/icons/icon_save_money.svg) no-repeat center center;
+		}
+
+		.head-page__item-image-3 {
+			background: url(styles/images/icons/icon_contract.svg) no-repeat center center;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.56em;
+			text-align: center;
+			color: #FFFFFF;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	&__line {
+		content: "";
+		position: absolute;
+		width: 90%;
+		height: 0;
+		bottom: 0;
+		background: linear-gradient(149.7deg, #FF0000 18.44%, #822EED 139.14%);
+	}
+
+	&__item:hover {
+		box-shadow: 0px 10px 20px #FF003D;
+		transition: 0.15s linear;
+		cursor: pointer;
+	}
+
+	&__social-media {
+		position: absolute;
+		top: 100px;
+		right: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__social-media-whatsapp,
+	&__social-media-facebook,
+	&__social-media-instagram,
+	&__social-media-vk {
+		height: 20px;
+		width: 20px;
+		margin-bottom: 17px;
+	}
+
+	&__social-media-whatsapp:hover,
+	&__social-media-facebook:hover,
+	&__social-media-instagram:hover,
+	&__social-media-vk:hover {
+		filter: drop-shadow(0px 0px 5px #FF003D);
+		cursor: pointer;
+	}
+
+	&__social-media-whatsapp {
+		background: url(styles/images/icons/whatsapp_icon.svg) no-repeat center center;
+	}
+
+	&__social-media-facebook {
+		background: url(styles/images/icons/facebook_icon.svg) no-repeat center center;
+	}
+
+	&__social-media-instagram {
+		background: url(styles/images/icons/instagram_icon.svg) no-repeat center center;
+	}
+
+	&__social-media-vk {
+		background: url(styles/images/icons/vk_icon.svg) no-repeat center center;
+	}
+
+	&__social-media-whatsapp:hover {
+		background: url(styles/images/icons/whatsapp_icon_on.svg) no-repeat center center;
+	}
+
+	&__social-media-facebook:hover {
+		background: url(styles/images/icons/facebook_icon_on.svg) no-repeat center center;
+	}
+
+	&__social-media-instagram:hover {
+		background: url(styles/images/icons/instagram_icon_on.svg) no-repeat center center;
+	}
+
+	&__social-media-vk:hover {
+		background: url(styles/images/icons/vk_icon_on.svg) no-repeat center center;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Page-caption END
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	About-author BEGIN
+-----------------------------------------------------------------*/
+.about-author {
+	&__container-for-describe {
+		position: relative;
+		margin: 60px 0 0 0;
+		height: 582px;
+		background: url(styles/images/head-page/about-author_bg-photo.png) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+		z-index: 2;
+	}
+
+	&__container-for-text {
+		// margin: -50px 0 0  100px;
+		position: absolute;
+		bottom: -20px;
+		left: 100px;
+		width: 500px;
+		height: 560px;
+		padding: 35px 30px 0;
+		// background: rgba(0, 0, 0, 0.5);
+		backdrop-filter: blur(20px);
+		overflow-y: auto;
+		-ms-overflow-style: none;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 4;
+
+		p {
+			color: #FFFFFF;
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+
+	&__container-for-text::-webkit-scrollbar {
+		width: 0;
+	}
+
+	h2 {
+		margin-top: 200px;
+	}
+
+	.about-author__name {
+		z-index: 3;
+		max-width: 540px;
+		margin-top: -100px;
+		right: 0;
+		position: absolute;
+		background: linear-gradient(180deg, #FF0000 0%, #822EED 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 80px;
+		line-height: 1.17em;
+		text-align: right;
+	}
+
+	&__icon-double-arrow {
+		position: absolute;
+		right: 138px;
+		bottom: -235px;
+		width: 132px;
+		height: 132px;
+		background: url(styles/images/icons/about-author__icon-double-arrow.svg) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+		-webkit-animation: smallArrow ease-in-out 1.7s infinite;
+		animation: smallArrow ease-in-out 1.7s infinite;
+	}
+
+	&__icon-double-arrow-big {
+		position: absolute;
+		left: -375px;
+		top: -150px;
+		width: 600px;
+		height: 600px;
+		background: url(styles/images/icons/about-author__icon-double-arrow-big.svg) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+		-webkit-animation: bigArrow ease-in-out 1.7s infinite;
+		animation: bigArrow ease-in-out 1.7s infinite;
+	}
+}
+
+/* ----------------------------------------------------------------
+	About-author END
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Photo-gallery BEGIN
+-----------------------------------------------------------------*/
+
+.photo-gallery {
+	&__wrapper {
+		height: 726px;
+		margin-top: 340px;
+		background: url(styles/images/head-page/photo-gallery-bg.png) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	h2 {
+		// margin-top: -200px;
+		position: absolute;
+		top: -100px;
+	}
+
+	&__container-for-items {
+		position: relative;
+		max-width: 1170px;
+		max-height: 720px;
+	}
+
+	&__carousel-item {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		max-width: 1170px;
+		max-height: 720px;
+	}
+
+	&__image {
+		background-position: center center;
+		background-size: contain;
+		box-shadow: 0px 4px 100px rgba(130, 46, 237, 0.2);
+	}
+
+	&__image-1 {
+		position: absolute;
+		z-index: 4;
+		left: 0;
+		bottom: -90px;
+		width: 400px;
+		height: 400px;
+		background: url(styles/images/head-page/photo-gallery_photo_1.png) no-repeat;
+	}
+
+	&__image-2 {
+		position: absolute;
+		z-index: 3;
+		left: 100px;
+		top: 80px;
+		width: 520px;
+		height: 264px;
+		background: url(styles/images/head-page/photo-gallery_photo_2.png) no-repeat;
+	}
+
+	&__image-3 {
+		position: absolute;
+		z-index: 2;
+		left: 400px;
+		bottom: 100px;
+		width: 343px;
+		height: 300px;
+		background: url(styles/images/head-page/photo-gallery_photo_3.png) no-repeat;
+	}
+
+	&__image-4 {
+		z-index: 1;
+		align-self: flex-end;
+		margin: 30px 25px 0 0;
+		width: 436px;
+		height: 680px;
+		background: url(styles/images/head-page/photo-gallery_photo_4.png) no-repeat;
+	}
+
+
+	.photo-gallery__nav {
+		position: absolute;
+		z-index: 5;
+		bottom: 40px;
+		right: 40px;
+		display: flex;
+		justify-content: space-between;
+
+		.photo-gallery__prev,
+		.photo-gallery__next {
+			border: none;
+			width: 60px;
+			height: 60px;
+		}
+
+		.photo-gallery__prev {
+			background: url(styles/images/icons/photo-gallery_arrow-active.svg) no-repeat center center, linear-gradient(137.97deg, #FF0000 -206.95%, #822EED 203.74%) !important;
+		}
+
+		.photo-gallery__next {
+			background: url(styles/images/icons/photo-gallery_arrow-active.svg) no-repeat center center, linear-gradient(-47.97deg, #FF0000 -206.95%, #822EED 203.74%) !important;
+			transform: rotate(180deg);
+		}
+
+		.photo-gallery__prev.disabled,
+		.photo-gallery__next.disabled {
+			cursor: not-allowed;
+			background: url(styles/images/icons/photo-gallery_arrow-off.svg) no-repeat center center, #A1A1A1 !important;
+		}
+
+		.photo-gallery__prev:not(.disabled):hover,
+		.photo-gallery__next:not(.disabled):hover {
+			cursor: pointer;
+			filter: drop-shadow(0px 0px 20px rgba(255, 0, 61, 0.8));
+			transition: .2s linear;
+		}
+
+
+	}
+
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+	Photo-gallery END
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+	Page-caption BEGIN
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page-caption END
+-----------------------------------------------------------------*/
