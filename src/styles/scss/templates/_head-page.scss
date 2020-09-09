@@ -148,58 +148,11 @@
 		position: absolute;
 		top: 100px;
 		right: 20px;
+		min-height: 140px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-	}
-
-	&__social-media-whatsapp,
-	&__social-media-facebook,
-	&__social-media-instagram,
-	&__social-media-vk {
-		height: 20px;
-		width: 20px;
-		margin-bottom: 17px;
-	}
-
-	&__social-media-whatsapp:hover,
-	&__social-media-facebook:hover,
-	&__social-media-instagram:hover,
-	&__social-media-vk:hover {
-		filter: drop-shadow(0px 0px 5px #FF003D);
-		cursor: pointer;
-	}
-
-	&__social-media-whatsapp {
-		background: url(styles/images/icons/whatsapp_icon.svg) no-repeat center center;
-	}
-
-	&__social-media-facebook {
-		background: url(styles/images/icons/facebook_icon.svg) no-repeat center center;
-	}
-
-	&__social-media-instagram {
-		background: url(styles/images/icons/instagram_icon.svg) no-repeat center center;
-	}
-
-	&__social-media-vk {
-		background: url(styles/images/icons/vk_icon.svg) no-repeat center center;
-	}
-
-	&__social-media-whatsapp:hover {
-		background: url(styles/images/icons/whatsapp_icon_on.svg) no-repeat center center;
-	}
-
-	&__social-media-facebook:hover {
-		background: url(styles/images/icons/facebook_icon_on.svg) no-repeat center center;
-	}
-
-	&__social-media-instagram:hover {
-		background: url(styles/images/icons/instagram_icon_on.svg) no-repeat center center;
-	}
-
-	&__social-media-vk:hover {
-		background: url(styles/images/icons/vk_icon_on.svg) no-repeat center center;
+		justify-content: space-between;
 	}
 }
 
@@ -804,6 +757,154 @@
 	Cooperation-options END
 -----------------------------------------------------------------*/
 
+/* ----------------------------------------------------------------
+	Reviews BEGIN
+-----------------------------------------------------------------*/
+
+.reviews {
+	&__wrapper {
+		padding-top: 50px;
+		height: 895px;
+		margin-top: 125px;
+		background: url(styles/images/head-page/reviews_photo_bg.png) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+	}
+
+}
+
+/* ----------------------------------------------------------------
+	Reviews END
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+	When should we work together BEGIN
+-----------------------------------------------------------------*/
+.work-together {
+	h2 {
+		margin: 85px 0 -20px;
+	}
+
+	&__container-for-describe {
+		position: relative;
+		margin: 60px 0 0 0;
+		height: 640px;
+		background: url(styles/images/head-page/work-together_bg-photo.png) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	&__container-for-text {
+		position: absolute;
+		bottom: -20px;
+		left: 100px;
+		width: 670px;
+		height: 630px;
+		padding: 35px 65px 0;
+		backdrop-filter: blur(20px);
+		overflow-y: auto;
+		-ms-overflow-style: none;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 4;
+
+		p {
+			color: #FFFFFF;
+			font-size: 16px;
+			line-height: 26px;
+		}
+
+		p strong {
+			font-size: 24px;
+			line-height: 30px;
+			color: #FFFFFF;
+		}
+	}
+
+	&__container-for-text::-webkit-scrollbar {
+		width: 0;
+	}
+}
+
+/* ----------------------------------------------------------------
+	When should we work together END
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Any questions BEGIN
+-----------------------------------------------------------------*/
+.any-questions {
+
+	&__gradient-block {}
+
+	&__author-photo {}
+
+	&__container-for-form {
+		button {
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			span {
+				font-size: 16px;
+				line-height: 19px;
+				color: #FFFFFF;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__form-caption {
+		font-family: "RalewayBold";
+		font-size: 30px;
+		line-height: 26px;
+
+
+	}
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+	Any questions END
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Page-caption BEGIN
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page-caption END
+-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----------------------------------------------------------------
 	footer BEGIN
@@ -841,48 +942,12 @@
 		color: #FF003D;
 	}
 
-
-
-
 	&__social-media {
-		max-width: 140px;
+		width: 140px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-	}
-
-	&__social-media-facebook,
-	&__social-media-instagram,
-	&__social-media-linkedn,
-	&__social-media-youtube {
-		height: 20px;
-		width: 20px;
-	}
-
-
-	&__social-media-facebook:hover,
-	&__social-media-instagram:hover,
-	&__social-media-linkedn:hover,
-	&__social-media-youtube:hover {
-		filter: drop-shadow(0px 0px 5px #FF003D);
-		cursor: pointer;
-	}
-
-	&__social-media-facebook {
-		background: url(styles/images/icons/facebook_icon_footer.svg) no-repeat center center;
-	}
-
-	&__social-media-instagram {
-		background: url(styles/images/icons/instagram_icon_footer.svg) no-repeat center center;
-	}
-
-	&__social-media-linkedn {
-		background: url(styles/images/icons/linkedn_icon_footer.svg) no-repeat center center;
-	}
-
-	&__social-media-youtube {
-		background: url(styles/images/icons/youtube_icon_footer.svg) no-repeat center center;
 	}
 
 	&__ending {
@@ -898,60 +963,8 @@
 			color: #624785;
 		}
 	}
-
-
-	&__social-media-facebook:hover {
-		background: url(styles/images/icons/facebook_icon_on_footer.svg) no-repeat center center;
-	}
-
-	&__social-media-instagram:hover {
-		background: url(styles/images/icons/instagram_icon_on_footer.svg) no-repeat center center;
-	}
-
-	&__social-media-linkedn:hover {
-		background: url(styles/images/icons/linkedn_icon_on_footer.svg) no-repeat center center;
-	}
-
-	&__social-media-youtube:hover {
-		background: url(styles/images/icons/youtube_icon_on_footer.svg) no-repeat center center;
-	}
-
-
 }
 
 /* ----------------------------------------------------------------
 	footer END
------------------------------------------------------------------*/
-
-
-
-
-
-
-
-/* ----------------------------------------------------------------
-	Page-caption BEGIN
------------------------------------------------------------------*/
-
-
-/* ----------------------------------------------------------------
-	Page-caption END
------------------------------------------------------------------*/
-
-/* ----------------------------------------------------------------
-	Page-caption BEGIN
------------------------------------------------------------------*/
-
-
-/* ----------------------------------------------------------------
-	Page-caption END
------------------------------------------------------------------*/
-
-/* ----------------------------------------------------------------
-	Page-caption BEGIN
------------------------------------------------------------------*/
-
-
-/* ----------------------------------------------------------------
-	Page-caption END
 -----------------------------------------------------------------*/

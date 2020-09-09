@@ -115,3 +115,56 @@ h2 {
 	line-height: 1.17em;
 	color: #FFFFFF;
 }
+
+.head-page,
+.footer {
+	&__social-media-facebook,
+	&__social-media-instagram,
+	&__social-media-linkedn,
+	&__social-media-youtube {
+		height: 20px;
+		width: 20px;
+	}
+
+
+	&__social-media-facebook:hover,
+	&__social-media-instagram:hover,
+	&__social-media-linkedn:hover,
+	&__social-media-youtube:hover {
+		filter: drop-shadow(0px 0px 5px #FF003D);
+		cursor: pointer;
+	}
+
+	&__social-media-facebook {
+		background: url(styles/images/icons/facebook_icon_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-instagram {
+		background: url(styles/images/icons/instagram_icon_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-linkedn {
+		background: url(styles/images/icons/linkedn_icon_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-youtube {
+		background: url(styles/images/icons/youtube_icon_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-facebook:hover {
+		background: url(styles/images/icons/facebook_icon_on_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-instagram:hover {
+		background: url(styles/images/icons/instagram_icon_on_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-linkedn:hover {
+		background: url(styles/images/icons/linkedn_icon_on_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-youtube:hover {
+		background: url(styles/images/icons/youtube_icon_on_footer.svg) no-repeat center center;
+	}
+
+}
