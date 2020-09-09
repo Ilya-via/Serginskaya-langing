@@ -42,3 +42,14 @@
 	30% {right: -100px;}
 	100% {right: 20px;}
 }
+
+@-webkit-keyframes cooperationOptionsArrow {
+	0% {bottom: 30px;}
+	60% {bottom: 60px;}
+	100% {bottom: 30px;}
+}
+@keyframes cooperationOptionsArrow {
+	0% {bottom: 30px;}
+	60% {bottom: 60px;}
+	100% {bottom: 30px;}
+}

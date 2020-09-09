@@ -653,26 +653,161 @@
 	}
 }
 
-
-
-
-
-
-
-
-
 /* ----------------------------------------------------------------
 	Coaching sessions END
 -----------------------------------------------------------------*/
-
-
 /* ----------------------------------------------------------------
-	Page-caption BEGIN
+	Cooperation-options BEGIN
 -----------------------------------------------------------------*/
+.cooperation-options {
+	margin: 170px 0 0 0;
+	&__container-for-items {
+		display: flex;
+		justify-content: space-between;
+	}
+h2 {
+	margin-bottom: 50px;
+}
+	&__item-1-text,
+	&__item-2-text,
+	li {
+		font-family: "RalewayRegular";
+		font-size: 18px;
+		line-height: 28px;
+		color: #FFFFFF;
+	}
+
+	&__item-caption {
+		font-family: "RalewayBold";
+		font-size: 36px;
+		line-height: 42px;
+		color: #FFFFFF;
+		margin: 0 0 25px 0;
+	}
+
+	&__item-note {
+		font-size: 14px;
+		line-height: 24px;
+		color: #C598FF;
+		margin: 25px 0 50px;
+	}
+
+	&__container-for-price,
+	ul {
+		margin: 25px 0 0 0;
+	}
+
+	&__price {
+		font-size: 24px;
+		line-height: 36px;
+		color: #FFFFFF;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 50px #FF003D;
+	}
+
+	&__item-1,
+	&__item-2,
+	&__item-3 {
+		position: relative;
+		max-width: 370px;
+	}
+
+	&__item-1,
+	&__item-2 {
+		padding: 15px;
+		background: linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+	}
+
+	&__item-1 {
+		height: 635px;
+	}
+
+	&__item-3-text-1,
+	&__item-3-text-2 {
+		font-size: 14px;
+		line-height: 24px;
+		color: #FFFFFF;
+	}
+
+	&__item-3-text-1 {
+		margin-bottom: 20px;
+	}
+
+	&__item-3-text-2 {
+		margin-bottom: 25px;
+	}
+
+	&__item-3-text-1 strong {
+		color: #FF003D;
+	}
+
+	&__button-1,
+	&__button-2 {
+		display: block;
+		width: 370px;
+		height: 70px;
+
+		display: flex;
+		align-items: center;
+		text-align: center;
+
+		span {
+			font-size: 18px;
+			line-height: 21px;
+			color: #FFFFFF;
+		}
+	}
+
+	&__button-1:hover {
+		filter: drop-shadow(0px 4px 20px rgba(255, 0, 61, 0.8));
+	}
+
+	&__button-2:hover {
+		filter: drop-shadow(0px 4px 20px rgba(130, 46, 237, 0.8));
+	}
+
+	&__button-1 {
+		background: linear-gradient(90deg, #FF0000, #822EED);
+	}
+
+	&__button-2 {
+		margin: 25px 0 0 0;
+		border-width: 3px 3px 3px 3px;
+		border-style: solid;
+		border-image-slice: 1;
+		border-image-source: linear-gradient(90deg, #FF0000, #822EED);
+
+		span {
+			background: linear-gradient(90deg, #FF0000, #822EED);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	&__icon-double-arrow {
+		position: absolute;
+		right: 120px;
+		bottom:30px;
+		width: 132px;
+		height: 132px;
+		background: url(styles/images/icons/cooperation-options_icon-double-arrow.svg) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+		-webkit-animation: cooperationOptionsArrow ease-in-out 1.7s infinite;
+		animation: cooperationOptionsArrow ease-in-out 1.7s infinite;
+	}
+
+
+}
+
+
+
+
+
+
 
 
 /* ----------------------------------------------------------------
-	Page-caption END
+	Cooperation-options END
 -----------------------------------------------------------------*/
 
 
