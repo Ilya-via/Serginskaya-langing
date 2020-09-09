@@ -4,8 +4,8 @@ let eventObject = {
 		lastSlideNumber: 0,
 		currentSlide: 1,
 	}
-
 };
+
 
 $(document).ready(function () {
 	// $(".portfolio__filter-caption-container.service").on("click", function () {
@@ -24,18 +24,25 @@ $(document).ready(function () {
 	$(".head-page__item").on("mouseout", function () {
 		$(this).find(".head-page__line").css({ 'height': '0', 'bottom': '0' });
 	});
+	// double arrow
+	// $(".open-programs__item-1 a").on("mouseover", function () {
+	// 	$(".open-programs__double-arrow-right").css({ '-webkit-animation:': 'openProgramsArrowRight ease-in-out 1s infinite', 'animation': 'openProgramsArrowRight ease-in-out 1s infinite' });
+	// });
+	// $(".open-programs__item-1 a").on("mouseout", function () {
+	// 	$(".open-programs__double-arrow-right").css({ '-webkit-animation:': 'none', 'animation': 'none' });
+	// });
 
 
 	function checkSliderProperties() {
-		eventObject.photoGallery.sliderLength = $(".photo-gallery__carousel-item[data-slide-number]").length;
+		eventObject.photoGallery.sliderLength = parseInt($(".photo-gallery__carousel-item[data-slide-number]").length);
 		eventObject.photoGallery.lastSlideNumber = eventObject.photoGallery.sliderLength;
-		eventObject.photoGallery.currentSlide = $(".photo-gallery__carousel-item:not(.unvisible)").attr('data-slide-number');
+		eventObject.photoGallery.currentSlide = parseInt($(".photo-gallery__carousel-item:not(.unvisible)").attr('data-slide-number'));
 	}
 
 	checkSliderProperties();
 
 	function checkSlideNumber() {
-		if (eventObject.photoGallery.currentSlide === 1) {
+		if (eventObject.photoGallery.currentSlide === 0) {
 			$(".photo-gallery__prev").addClass('disabled');
 		} else {
 			if ($(".photo-gallery__prev").hasClass('disabled')) {
@@ -49,29 +56,50 @@ $(document).ready(function () {
 			if ($(".photo-gallery__next").hasClass('disabled')) {
 				$(".photo-gallery__next").removeClass('disabled');
 			}
-
 		}
 	}
 
 
 	// Slider
-	$(".photo-gallery__prev").on("click", function (e) {
-		if (!($(".photo-gallery__next").hasClass('disabled'))) {
-			// var value_1 = '.photo-gallery__carousel-item[data-slide-number="' + (eventObject.photoGallery.currentSlide - 1) + '"]';
-			$('.photo-gallery__carousel-item[data-slide-number="' + (eventObject.photoGallery.currentSlide - 1) + '"]').addClass('unvisible');
-			$('.photo-gallery__carousel-item[data-slide-number="' + (eventObject.photoGallery.currentSlide) + '"]').removeClass('unvisible');
+	$(".photo-gallery__prev").on("click", function () {
+		if (!($(".photo-gallery__prev").hasClass('disabled'))) {
 			checkSliderProperties();
+			checkSlideNumber();
+			$($('.photo-gallery__carousel-item[data-slide-number="' + (eventObject.photoGallery.currentSlide - 1) + '"]')[0]).addClass('unvisible');
+			$($('.photo-gallery__carousel-item[data-slide-number="' + (eventObject.photoGallery.currentSlide) + '"]')[0]).removeClass('unvisible');
+			console.log('111');
+			new WOW().init();
 		}
 	});
 
 	$(".photo-gallery__next").on("click", function (e) {
 		if (!($(".photo-gallery__next").hasClass('disabled'))) {
-			$('.photo-gallery__carousel-item[data-slide-number="' + (eventObject.photoGallery.currentSlide + 1) + '"]').addClass('unvisible');
-			$('.photo-gallery__carousel-item[data-slide-number="' + (eventObject.photoGallery.currentSlide) + '"]').removeClass('unvisible');
 			checkSliderProperties();
+			checkSlideNumber();
+			$($('.photo-gallery__carousel-item[data-slide-number="' + (eventObject.photoGallery.currentSlide) + '"]')[0]).addClass('unvisible');
+			$($('.photo-gallery__carousel-item[data-slide-number="' + (eventObject.photoGallery.currentSlide + 1) + '"]')[0]).removeClass('unvisible');
+			console.log('22');
+			new WOW().init();
 		}
 	});
 
+	// switch (expression) {
+	// 	case value1:
+	// 		//Здесь выполняются инструкции, если результат выражения равен value1
+	// 		[break;]
+	// 	case value2:
+	// 		//Инструкции, соответствующие value2
+	// 		[break;]
+	// 	...
+	// 	case valueN:
+	// 		//Инструкции, соответствующие значению valueN
+	// 		//statementsN
+	// 		[break;]
+	// 	default:
+	// 		//Здесь находятся инструкции, которые выполняются при отсутствии соответствующего значения
+	// 		//statements_def
+	// 		[break;]
+	// }
 
 });
 

@@ -411,17 +411,8 @@
 			filter: drop-shadow(0px 0px 20px rgba(255, 0, 61, 0.8));
 			transition: .2s linear;
 		}
-
-
 	}
-
 }
-
-
-
-
-
-
 
 /* ----------------------------------------------------------------
 	Photo-gallery END
@@ -430,6 +421,237 @@
 
 
 
+/* ----------------------------------------------------------------
+	Open-programs BEGIN
+-----------------------------------------------------------------*/
+.open-programs {
+	&__container-for-items {
+		position: relative;
+		margin-top: 385px;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: flex-start;
+	}
+
+	h2 {
+		position: absolute;
+		top: -100px;
+	}
+
+	p {
+		display: block;
+		max-width: 520px;
+		font-size: 36px;
+		line-height: 42px;
+		color: #FFFFFF;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		span {
+			font-family: "RalewayBold";
+		}
+	}
+
+	&__item-1,
+	&__item-2 {
+		width: 900px;
+		height: 160px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 45px;
+
+
+		a {
+			display: block;
+			width: 250px;
+			height: 60px;
+			font-size: 24px;
+			line-height: 28px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #FFFFFF;
+			background-color: #0D0D0D;
+		}
+
+		a:hover {
+			filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+			transition: .2s linear;
+		}
+	}
+
+	&__item-1 {
+		margin: 0 0 45px 100px;
+		background: url(styles/images/head-page/self-made_bg.png) no-repeat center center;
+	}
+
+	&__item-2 {
+		background: url(styles/images/head-page/coach-session_bg.png) no-repeat center center;
+	}
+
+	&__double-arrow-down,
+	&__double-arrow-right {
+		position: absolute;
+		background: url(styles/images/icons/open-programs_double_arrow_pink.svg) no-repeat center center;
+		width: 76px;
+		height: 90px;
+	}
+
+	&__double-arrow-down {
+		filter: drop-shadow(0px 0px 50px #FF003D);
+		bottom: -135px;
+		right: 360px;
+		-webkit-animation: openProgramsArrowDown ease-in-out 1.7s infinite;
+		animation: openProgramsArrowDown ease-in-out 1.7s infinite;
+	}
+
+	&__double-arrow-right {
+		transform: rotate(-90deg);
+		filter: drop-shadow(0px 0px 50px #822EED);
+		top: 35px;
+		right: 20px;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Open-programs END
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Coaching sessions BEGIN
+-----------------------------------------------------------------*/
+.coaching-sessions {
+	&__wrapper {
+		height: 1555px;
+		margin-top: 340px;
+		background: url(styles/images/head-page/coaching-sessions_bg.png) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	h2,
+	strong,
+	p.coaching-sessions__caption {
+		color: #FF003D;
+	}
+
+	h2 {
+		margin: 20px 0 30px 0;
+	}
+
+	p.coaching-sessions__caption {
+		font-family: "RalewayBold";
+	}
+
+	p,
+	li {
+		font-family: "RalewayRegular";
+		font-size: 16px;
+		line-height: 26px;
+		color: #FFFFFF;
+	}
+
+	&__item-1 {
+		padding-top: 70px;
+		display: flex;
+		justify-content: space-between;
+
+		p {
+			margin-bottom: 20px;
+		}
+
+		ul li {
+			line-height: 30px;
+		}
+	}
+
+	&__item-1-text {
+		max-width: 600px;
+	}
+
+	&__item-1-photo-container {
+		position: relative;
+		max-width: 570px;
+	}
+
+	&__item-1-photo {
+		position: relative;
+		width: 500px;
+		height: 560px;
+		z-index: 2;
+		background: url(styles/images/head-page/coaching-sessions_photo-1.png) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	&__item-1-block--gradient {
+		position: absolute;
+		z-index: 1;
+		background: linear-gradient(-90deg, #FF0000 0%, #70295C 100%);
+		margin-top: -50px;
+		left: -14%;
+		width: 114%;
+		height: 100px;
+	}
+
+
+	&__item-2 {
+		margin: 80px 0 70px;
+	}
+
+	&__item-3 {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__item-3-photo {
+		position: relative;
+		width: 415px;
+		height: 500px;
+		z-index: 2;
+		background: url(styles/images/head-page/coaching-sessions_photo-2.png) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+		margin-right: 25px;
+	}
+
+	&__item-3-text {
+		position: relative;
+		max-width: 670px;
+	}
+
+	&__item-3-block--gradient {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		margin: 20px 0;
+		padding: 25px;
+		left: -500px;
+		width: 1170px;
+		height: 130px;
+		background: linear-gradient(-90deg, rgba(255, 0, 0, 0.6) 0%, rgba(130, 46, 237, 0.6) 100%);
+
+		p {
+			display: inline-block;
+			max-width: 650px;
+
+			strong {
+				font-size: 18px;
+				color: #FFFFFF;
+			}
+
+		}
+	}
+
+	&__item-3-list-caption {
+		margin: 20px 0 8px;
+
+		strong {
+			color: #FFFFFF;
+		}
+	}
+}
 
 
 
@@ -438,6 +660,20 @@
 
 
 
+
+/* ----------------------------------------------------------------
+	Coaching sessions END
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page-caption BEGIN
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page-caption END
+-----------------------------------------------------------------*/
 
 
 /* ----------------------------------------------------------------
