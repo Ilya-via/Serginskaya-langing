@@ -661,13 +661,16 @@
 -----------------------------------------------------------------*/
 .cooperation-options {
 	margin: 170px 0 0 0;
+
 	&__container-for-items {
 		display: flex;
 		justify-content: space-between;
 	}
-h2 {
-	margin-bottom: 50px;
-}
+
+	h2 {
+		margin-bottom: 50px;
+	}
+
 	&__item-1-text,
 	&__item-2-text,
 	li {
@@ -786,7 +789,7 @@ h2 {
 	&__icon-double-arrow {
 		position: absolute;
 		right: 120px;
-		bottom:30px;
+		bottom: 30px;
 		width: 132px;
 		height: 132px;
 		background: url(styles/images/icons/cooperation-options_icon-double-arrow.svg) no-repeat center center;
@@ -795,10 +798,130 @@ h2 {
 		-webkit-animation: cooperationOptionsArrow ease-in-out 1.7s infinite;
 		animation: cooperationOptionsArrow ease-in-out 1.7s infinite;
 	}
+}
+
+/* ----------------------------------------------------------------
+	Cooperation-options END
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	footer BEGIN
+-----------------------------------------------------------------*/
+.footer {
+	&__wrapper {
+		position: relative;
+		height: 539px;
+		background: #0D0B10;
+	}
+
+	&__container-for-items {
+		padding-top: 55px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__caption {
+		font-family: "RalewayBold";
+		font-size: 24px;
+		line-height: 50px;
+		color: #822EED;
+	}
+
+
+	li a {
+		font-size: 16px;
+		line-height: 50px;
+		color: #FFFFFF;
+	}
+
+	li a:hover {
+		color: #FF003D;
+	}
+
+
+
+
+	&__social-media {
+		max-width: 140px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__social-media-facebook,
+	&__social-media-instagram,
+	&__social-media-linkedn,
+	&__social-media-youtube {
+		height: 20px;
+		width: 20px;
+	}
+
+
+	&__social-media-facebook:hover,
+	&__social-media-instagram:hover,
+	&__social-media-linkedn:hover,
+	&__social-media-youtube:hover {
+		filter: drop-shadow(0px 0px 5px #FF003D);
+		cursor: pointer;
+	}
+
+	&__social-media-facebook {
+		background: url(styles/images/icons/facebook_icon_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-instagram {
+		background: url(styles/images/icons/instagram_icon_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-linkedn {
+		background: url(styles/images/icons/linkedn_icon_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-youtube {
+		background: url(styles/images/icons/youtube_icon_footer.svg) no-repeat center center;
+	}
+
+	&__ending {
+		position: absolute;
+		bottom: 40px;
+		left: 0;
+		right: 0;
+
+		p {
+			font-size: 10px;
+			line-height: 50px;
+			text-align: center;
+			color: #624785;
+		}
+	}
+
+
+	&__social-media-facebook:hover {
+		background: url(styles/images/icons/facebook_icon_on_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-instagram:hover {
+		background: url(styles/images/icons/instagram_icon_on_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-linkedn:hover {
+		background: url(styles/images/icons/linkedn_icon_on_footer.svg) no-repeat center center;
+	}
+
+	&__social-media-youtube:hover {
+		background: url(styles/images/icons/youtube_icon_on_footer.svg) no-repeat center center;
+	}
 
 
 }
 
+/* ----------------------------------------------------------------
+	footer END
+-----------------------------------------------------------------*/
 
 
 
@@ -807,9 +930,22 @@ h2 {
 
 
 /* ----------------------------------------------------------------
-	Cooperation-options END
+	Page-caption BEGIN
 -----------------------------------------------------------------*/
 
+
+/* ----------------------------------------------------------------
+	Page-caption END
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Page-caption BEGIN
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page-caption END
+-----------------------------------------------------------------*/
 
 /* ----------------------------------------------------------------
 	Page-caption BEGIN
