@@ -2,35 +2,6 @@
 	Page-caption BEGIN
 -----------------------------------------------------------------*/
 .head-page {
-	&__navigation-desktop {
-		padding-top: 20px;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		max-width: 870px;
-		height: 60px;
-
-		li {
-			margin-right: 5px;
-
-			a {
-				font-size: 18px;
-				line-height: 50px;
-				color: #FFFFFF;
-				text-shadow: 0px 0px 20px #FF003D;
-				// font-family: "RalewayBold";
-				letter-spacing: 0.04em;
-			}
-
-			a:hover {
-				font-family: "RalewayBold";
-				color: #FF003D;
-				// letter-spacing: 0.007em;
-			}
-		}
-	}
-
-
 	&__caption-wrapper {
 		height: 674px;
 		background: url(styles/images/head-page/page-caption_bg.png) no-repeat center center;
@@ -40,18 +11,6 @@
 
 	&__container-for-describe {
 		margin: 105px 0 80px;
-
-		h1 {
-			font-family: "RalewayBold";
-			font-size: 60px;
-			line-height: 1.17em;
-
-			background: linear-gradient(90deg, rgba(200, 177, 228, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(240, 202, 211, 1) 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			filter: drop-shadow(0px 0px 2px #FF0000);
-		}
-
 	}
 
 	&__container-for-list {
@@ -142,17 +101,6 @@
 		box-shadow: 0px 10px 20px #FF003D;
 		transition: 0.15s linear;
 		cursor: pointer;
-	}
-
-	&__social-media {
-		position: absolute;
-		top: 100px;
-		right: 20px;
-		min-height: 140px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: space-between;
 	}
 }
 
@@ -433,6 +381,8 @@
 		filter: drop-shadow(0px 0px 50px #822EED);
 		top: 35px;
 		right: 20px;
+		// -webkit-animation: openProgramsArrowRight ease-in-out 1.7s infinite;
+		// animation: openProgramsArrowRight ease-in-out 1.7s infinite;
 	}
 }
 
@@ -853,7 +803,6 @@
 		right: 40px;
 		display: flex;
 		justify-content: space-between;
-
 	}
 }
 
@@ -1038,32 +987,6 @@
 /* ----------------------------------------------------------------
 	Any questions END
 -----------------------------------------------------------------*/
-
-
-
-
-/* ----------------------------------------------------------------
-	Page-caption BEGIN
------------------------------------------------------------------*/
-
-
-/* ----------------------------------------------------------------
-	Page-caption END
------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------------------------------------------------------
 	footer BEGIN
 -----------------------------------------------------------------*/
