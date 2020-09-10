@@ -842,12 +842,42 @@
 	Any questions BEGIN
 -----------------------------------------------------------------*/
 .any-questions {
+	margin: 200px 0 95px;
 
-	&__gradient-block {}
+	&__container-for-items {
+		margin: 70px 0 0 0;
+		position: relative;
+		min-height: 685px;
+	}
 
-	&__author-photo {}
+	&__gradient-block {
+		position: absolute;
+		z-index: 1;
+		width: 1114px;
+		height: 416px;
+		background: linear-gradient(192.7deg, rgba(255, 0, 0, 0.7) -23.83%, rgba(130, 46, 237, 0.7) 79.18%);
+	}
+
+	&__author-photo {
+		position: absolute;
+		z-index: 3;
+		top: -130px;
+		right: 50px;
+		width: 520px;
+		height: 670px;
+		background: url(styles/images/head-page/any-questions_photo-1.png) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+	}
 
 	&__container-for-form {
+		margin-left: 100px;
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
 		button {
 			display: flex;
 			align-items: center;
@@ -866,8 +896,69 @@
 		font-family: "RalewayBold";
 		font-size: 30px;
 		line-height: 26px;
+		color: #FFFFFF;
+		margin: 35px 0 50px;
+	}
 
+	&__first_name,
+	&__number,
+	&__email,
+	&__comment {
+		border: none;
+		border-bottom: 1px solid #FFFFFF;
+		background: transparent;
+		width: 250px;
+		height: 30px;
+		font-family: "RalewayRegular";
+		margin-bottom: 40px;
+		color: #FFFFFF;
+		font-size: 14px;
+		line-height: 26px;
+	}
 
+	input::placeholder {
+		color: #FFFFFF;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	&__button-send {
+		position: absolute;
+		width: 320px;
+		height: 55px;
+		bottom: -150px;
+		left: 50px;
+		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		background: linear-gradient(88.48deg, #FF0000 -19.67%, #822EED 100%);
+
+		span {
+			font-size: 16px;
+			line-height: 19px;
+			color: #FFFFFF;
+		}
+	}
+
+	&__button-send:hover {
+		cursor: pointer;
+		filter: drop-shadow(0px 4px 20px rgba(255, 0, 61, 0.8));
+	}
+
+	&__icon-double-arrow-big-right {
+		transform: rotate(-90deg);
+		position: absolute;
+		left: -385px;
+		top: 130px;
+		width: 350px;
+		height: 350px;
+		background: url(styles/images/icons/about-author__icon-double-arrow-big.svg) no-repeat center center;
+		background-position: center center;
+		background-size: cover;
+		-webkit-animation: bigArrowRight ease-in-out 1.7s infinite;
+		animation: bigArrowRight ease-in-out 1.7s infinite;
 	}
 }
 

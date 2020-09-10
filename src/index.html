@@ -341,21 +341,25 @@
 		<section class="any-questions">
 			<div class="container__fhd">
 				<div class="container__hd">
-					<!-- <h2>Остались вопросы?</h2> -->
-					<div class="any-questions__gradient-block"></div>
-					<div class="any-questions__author-photo"></div>
+					<h2>Остались вопросы?</h2>
+					<div class="any-questions__container-for-items">
+						<div class="any-questions__gradient-block"></div>
+						<div class="any-questions__author-photo"></div>
 
-					<form class="any-questions__container-for-form">
-						<p class="any-questions__form-caption">С удовольствием отвечу!</p>
-						<!-- <input type="name" title="Кириллица и латиница - строчные, прописные." placeholder="Ваше имя" maxlength="30"
-							autocomplete="off" name="first_name">
-						<input type="tel" title="Заполните это поле" required placeholder="+375 (__) ___ __ __" autocomplete="off"
-							name="phone" class="number" id="number">
-						<input type="email" maxlength="60" autocomplete="off" name="email">
-						<textarea class="order__comment" rows="1" maxlength="500" name="message"
-							placeholder="Комментарий"></textarea>
-						<input type="button" name="submit" value="Отправить" class="order__button-send"> -->
-					</form>
+						<form class="any-questions__container-for-form">
+							<p class="any-questions__form-caption">С удовольствием отвечу!</p>
+							<input type="name" required placeholder="Имя*" maxlength="30" autocomplete="off" name="first_name"
+								class="any-questions__first_name">
+							<input type="tel" required placeholder="Телефон*" maxlength="30" autocomplete="off" name="phone"
+								class="any-questions__number">
+							<input type="email" placeholder="E-mail" maxlength="60" autocomplete="off" name="email"
+								class="any-questions__email">
+							<input type="text" class="any-questions__comment" maxlength="500" name="message"
+								placeholder="Комментарий"></input>
+							<button class="any-questions__button-send"><span>Отправить</span></button>
+						</form>
+					</div>
+					<div class="any-questions__icon-double-arrow-big-right"></div>
 
 				</div>
 			</div>
