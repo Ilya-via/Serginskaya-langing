@@ -3,6 +3,11 @@ let eventObject = {
 		sliderLength: 0,
 		lastSlideNumber: 0,
 		currentSlide: 1,
+	},
+	reviewsPhotoGallery = {
+		sliderLength: 0,
+		lastSlideNumber: 0,
+		currentSlide: 1,
 	}
 };
 
@@ -67,11 +72,11 @@ $(document).ready(function () {
 	// });
 
 
-	
 
+	// Slider
 	checkSliderProperties();
 	checkCurrentSlide();
-	// Slider
+
 	$(".photo-gallery__prev").on("click", function () {
 
 		if (!($(".photo-gallery__prev").hasClass('disabled'))) {

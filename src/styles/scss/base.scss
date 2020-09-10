@@ -118,6 +118,7 @@ h2 {
 
 .head-page,
 .footer {
+
 	&__social-media-facebook,
 	&__social-media-instagram,
 	&__social-media-linkedn,
@@ -166,5 +167,45 @@ h2 {
 	&__social-media-youtube:hover {
 		background: url(styles/images/icons/youtube_icon_on_footer.svg) no-repeat center center;
 	}
+}
 
+
+.photo-gallery__nav,
+.reviews__nav {
+	.photo-gallery__prev,
+	.photo-gallery__next,
+	.reviews__prev,
+	.reviews__next {
+		border: none;
+		width: 60px;
+		height: 60px;
+	}
+
+	.photo-gallery__prev,
+	.reviews__prev {
+		background: url(styles/images/icons/photo-gallery_arrow-active.svg) no-repeat center center, linear-gradient(137.97deg, #FF0000 -206.95%, #822EED 203.74%) !important;
+	}
+
+	.photo-gallery__next,
+	.reviews__next {
+		background: url(styles/images/icons/photo-gallery_arrow-active.svg) no-repeat center center, linear-gradient(-47.97deg, #FF0000 -206.95%, #822EED 203.74%) !important;
+		transform: rotate(180deg);
+	}
+
+	.photo-gallery__prev.disabled,
+	.photo-gallery__next.disabled,
+	.reviews__prev.disabled,
+	.reviews__next.disabled {
+		cursor: not-allowed;
+		background: url(styles/images/icons/photo-gallery_arrow-off.svg) no-repeat center center, #A1A1A1 !important;
+	}
+
+	.photo-gallery__prev:not(.disabled):hover,
+	.photo-gallery__next:not(.disabled):hover,
+	.reviews__prev:not(.disabled):hover,
+	.reviews__next:not(.disabled):hover {
+		cursor: pointer;
+		filter: drop-shadow(0px 0px 20px rgba(255, 0, 61, 0.8));
+		transition: .2s linear;
+	}
 }
