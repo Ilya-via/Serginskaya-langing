@@ -80,17 +80,56 @@ function checkSlideNumberNext() {
 function changeWidthPaginatorline() {
 	let reviewsAttrValue = Math.round(250 / (eventObject.reviews.sliderLength / eventObject.reviews.currentSlide));
 	$(".reviews__paginator-line-gradient").attr('width', reviewsAttrValue);
+	$("#paint0_linear").attr('x2', reviewsAttrValue);
 }
 
+// PopUp 
+function displayPopUpBlock() {
+	messageVisible();
+	setTimeout(function () {
+		messageUnvisible();
+	}, 3000);
+}
+function messageVisible() {
+	var elem = document.querySelector(".order__pop-up");
+	var massiveClass = elem.classList;
+
+	if (massiveClass.contains("unvisible") == true) {
+		massiveClass.remove("unvisible");
+	}
+	setTimeout(function () {
+		massiveClass.remove("opacityNone");
+	}, 50);
+}
+function messageUnvisible() {
+	var elem = document.querySelector(".order__pop-up");
+	var massiveClass = elem.classList;
+	massiveClass.add("opacityNone");
+	elem.addEventListener("transitionend", addHiddenClass(), false);
+}
+function addHiddenClass() {
+	setTimeout(function () {
+		var elem = document.querySelector(".order__pop-up");
+		var massiveClass = elem.classList;
+		massiveClass.add("unvisible");
+	}, 1500);
+}
+
+// Smooth scroll
+function animatedScroll(event, context) {
+	// let id = $(context).children('a').attr('href');
+	let id = $(context).attr('href');
+	console.log(context);
+	if ($(id).length > 0) {
+		let top = $(id).offset().top;
+		$('body,html').animate({ scrollTop: top }, 700);
+	}
+}
 
 $(document).ready(function () {
-	// $(".portfolio__filter-caption-container.service").on("click", function () {
-	// 	accordionVisibility('.portfolio__service-select-block-item');
-	// });
-
-	// $(".navigation__services").on("click", function (e) {
-	// 	animatedScroll(e, this);
-	// });
+	$('.head-page__item-3, .open-programs__item-2 a, .head-page__navigation-desktop a[href="#about-author"], .footer__menu a[href="#about-author"], .head-page__navigation-desktop a[href="#open-programs"], .footer__menu a[href="#open-programs"], .head-page__navigation-desktop a[href="#coaching-sessions"], .footer__menu a[href="#coaching-sessions"], .head-page__navigation-desktop a[href="#reviews"], .footer__menu a[href="#reviews"], .head-page__navigation-desktop a[href="#footer"]').on("click", function (e) {
+		animatedScroll(e, this);
+	});
 
 
 	// Bottom line for items
@@ -138,8 +177,7 @@ $(document).ready(function () {
 	});
 
 
-	// Slider for reviews 
-
+	// Slider for reviews
 	checkSliderPropertiesforReviews();
 	checkCurrentSlideforReviews();
 	changeWidthPaginatorline();
@@ -169,6 +207,18 @@ $(document).ready(function () {
 		changeWidthPaginatorline();
 	});
 
+	// Form
+	$(".head-page__button-1").on("click", function (e) {
+		$(".form-page__container-for-form").removeClass('unvisible');
+	});
+	$(".form-page__close").on("click", function (e) {
+		$(".form-page__container-for-form").addClass('unvisible');
+	});
+	$(".form-page__button-send").on("mousedown", function (e) {
+		$(".form-page__container-for-form").addClass('unvisible');
+		displayPopUpBlock();
+	});
+
 });
 
 
@@ -194,13 +244,6 @@ $(document).ready(function () {
 // 	}
 // }
 
-// Плавный скролл
-// function animatedScroll(event, context) {
-// 	let id = $(context).children('a').attr('href');
-// 	if ($(id).length > 0) {
-// 		let top = $(id).offset().top;
-// 		$('body,html').animate({ scrollTop: top }, 700);
-// 	}
-// }
+
 
 

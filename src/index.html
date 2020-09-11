@@ -19,11 +19,11 @@
 					<div class="container__hd">
 						<nav class="head-page__navigation">
 							<ul class="head-page__navigation-desktop">
-								<li><a href="#">Обо мне</a></li>
-								<li><a href="#">Открытые программы</a></li>
-								<li><a href="#">Коучинг</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a href="#about-author">Обо мне</a></li>
+								<li><a href="#open-programs">Открытые программы</a></li>
+								<li><a href="#coaching-sessions">Коучинг</a></li>
+								<li><a href="#reviews">Отзывы</a></li>
+								<li><a href="#footer">Контакты</a></li>
 							</ul>
 						</nav>
 						<div class="head-page__container-for-describe">
@@ -47,7 +47,7 @@
 								<p>Для тех, кто ищет (хочет сменить) работу, молодых специалистов</p>
 								<div class="head-page__line"></div>
 							</a>
-							<a class="head-page__item head-page__item-3">
+							<a href="#work-together" class="head-page__item head-page__item-3">
 								<div class="head-page__item-image-3"></div>
 								<p>Когда нам стоит работать вместе?</p>
 								<div class="head-page__line"></div>
@@ -64,7 +64,7 @@
 			</div>
 		</section>
 
-		<section class="about-author">
+		<section class="about-author" id="about-author">
 			<div class="container__fhd">
 				<div class="container__hd">
 					<h2>Об авторе</h2>
@@ -139,7 +139,7 @@
 			</div>
 		</section>
 
-		<section class="open-programs">
+		<section class="open-programs" id="open-programs">
 			<div class="container__fhd">
 				<div class="container__hd">
 					<h2>Открытые программы</h2>
@@ -150,7 +150,7 @@
 						</div>
 						<div class="open-programs__item-2">
 							<p><strong>Коуч-сессии</strong></p>
-							<a href="#">Подробнее</a>
+							<a href="#coaching-sessions">Подробнее</a>
 						</div>
 					</div>
 					<div class="open-programs__double-arrow-down"></div>
@@ -160,7 +160,7 @@
 			</div>
 		</section>
 
-		<section class="coaching-sessions">
+		<section class="coaching-sessions" id="coaching-sessions">
 			<div class="container__fhd">
 				<div class="coaching-sessions__wrapper">
 					<div class="container__hd">
@@ -301,7 +301,7 @@
 			</div>
 		</section>
 
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="container__fhd">
 				<div class="reviews__wrapper">
 					<div class="container__hd">
@@ -312,7 +312,7 @@
 								<rect width="250" height="2" fill="#A3A3A3" />
 								<rect class="reviews__paginator-line-gradient" width="50" height="2" fill="url(#paint0_linear)" />
 								<defs>
-									<linearGradient id="paint0_linear" x1="-10.3271" y1="1.64929" x2="32.2836" y2="-26.6633"
+									<linearGradient id="paint0_linear" x1="-10" y1="1.6" x2="33" y2="-27"
 										gradientUnits="userSpaceOnUse">
 										<stop stop-color="#FF0000" />
 										<stop offset="1" stop-color="#822EED" />
@@ -443,7 +443,7 @@
 			</div>
 		</section>
 
-		<section class="work-together">
+		<section class="work-together" id="work-together">
 			<div class="container__fhd">
 				<div class="container__hd">
 					<h2>Когда нам стоит работать вместе</h2>
@@ -482,15 +482,15 @@
 
 						<form class="any-questions__container-for-form">
 							<p class="any-questions__form-caption">С удовольствием отвечу!</p>
-							<input type="name" required placeholder="Имя*" maxlength="30" autocomplete="off" name="first_name"
+							<input type="name" placeholder="Имя*" maxlength="30" autocomplete="off" name="first_name"
 								class="any-questions__first_name">
-							<input type="tel" required placeholder="Телефон*" maxlength="30" autocomplete="off" name="phone"
+							<input type="tel" placeholder="Телефон*" maxlength="30" autocomplete="off" name="phone"
 								class="any-questions__number">
 							<input type="email" placeholder="E-mail" maxlength="60" autocomplete="off" name="email"
 								class="any-questions__email">
 							<input type="text" class="any-questions__comment" maxlength="500" name="message"
 								placeholder="Комментарий"></input>
-							<button class="any-questions__button-send"><span>Отправить</span></button>
+							<a class="any-questions__button-send" onclick="displayPopUpBlock()"><span>Отправить</span></a>
 						</form>
 					</div>
 					<div class="any-questions__icon-double-arrow-big-right"></div>
@@ -499,9 +499,28 @@
 			</div>
 		</section>
 
+
+		<div class="order__pop-up unvisible opacityNone">
+			<div class="order__pop-up">
+				<div class="order__pop-up-image"></div>
+				<p class="order__pop-up-caption">Спасибо за обращение</p>
+				<p class="order__pop-up-text">Мы свяжемся с Вами <br> в ближайшее время</p>
+			</div>
+		</div>
+
+		<form class="form-page__container-for-form unvisible">
+			<div class="form-page__close"></div>
+			<p class="form-page__form-caption">Укажите данные <br> для связи</p>
+			<input type="name" placeholder="Имя*" maxlength="30" autocomplete="off" name="first_name"
+				class="form-page__first_name">
+			<input type="tel" placeholder="Телефон*" maxlength="30" autocomplete="off" name="phone" class="form-page__number">
+			<input type="email" placeholder="E-mail" maxlength="60" autocomplete="off" name="email" class="form-page__email">
+			<input type="text" class="form-page__comment" maxlength="500" name="message" placeholder="Комментарий"></input>
+			<button class="form-page__button-send"><span>Отправить</span></button>
+		</form>
 	</main>
 
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="container__fhd">
 			<div class="footer__wrapper">
 				<div class="container__hd">
@@ -518,10 +537,10 @@
 						<div class="footer__menu">
 							<p class="footer__caption">Меню</p>
 							<ul>
-								<li><a href="#">Обо мне</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">Открытые программы</a></li>
-								<li><a href="#">Коучинг</a></li>
+								<li><a href="#about-author">Обо мне</a></li>
+								<li><a href="#open-programs">Открытые программы</a></li>
+								<li><a href="#reviews">Отзывы</a></li>
+								<li><a href="#coaching-sessions">Коучинг</a></li>
 							</ul>
 						</div>
 						<div class="footer__social">

@@ -896,50 +896,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-
-		button {
-			display: flex;
-			align-items: center;
-			text-align: center;
-
-			span {
-				font-size: 16px;
-				line-height: 19px;
-				color: #FFFFFF;
-				text-transform: uppercase;
-			}
-		}
 	}
 
-	&__form-caption {
-		font-family: "RalewayBold";
-		font-size: 30px;
-		line-height: 26px;
-		color: #FFFFFF;
-		margin: 35px 0 50px;
-	}
 
-	&__first_name,
-	&__number,
-	&__email,
-	&__comment {
-		border: none;
-		border-bottom: 1px solid #FFFFFF;
-		background: transparent;
-		width: 250px;
-		height: 30px;
-		font-family: "RalewayRegular";
-		margin-bottom: 40px;
-		color: #FFFFFF;
-		font-size: 14px;
-		line-height: 26px;
-	}
-
-	input::placeholder {
-		color: #FFFFFF;
-		font-size: 14px;
-		line-height: 26px;
-	}
 
 	&__button-send {
 		position: absolute;
@@ -978,6 +937,123 @@
 		background-size: cover;
 		-webkit-animation: bigArrowRight ease-in-out 1.7s infinite;
 		animation: bigArrowRight ease-in-out 1.7s infinite;
+	}
+}
+
+.form-page {
+	&__container-for-form {
+		position: fixed;
+		background-color: #000000;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		transition: all 0.8s ease-out;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 460px;
+		height: 625px;
+	}
+
+	&__close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		padding: 5px;
+		width: 40px;
+		height: 40px;
+		background: url(styles/images/icons/close-cross.svg) no-repeat center center;
+		background-size: cover;
+	}
+
+	&__close:hover {
+		filter: drop-shadow(0px 0px 15px rgba(255, 0, 61, 0.8));
+	}
+
+	&__form-caption {
+		text-align: center;
+		line-height: 1.29em;
+	}
+
+	&__first_name,
+	&__number,
+	&__email,
+	&__comment {
+		width: 350px;
+	}
+
+	&__button-send {
+		margin: 40px 0;
+		width: 280px;
+		height: 50px;
+		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		background: linear-gradient(88.48deg, #FF0000 -19.67%, #822EED 100%);
+
+		span {
+			font-size: 16px;
+			line-height: 19px;
+			color: #FFFFFF;
+		}
+	}
+
+	&__button-send:hover,
+	&__close:hover {
+		cursor: pointer;
+		filter: drop-shadow(0px 4px 20px rgba(255, 0, 61, 0.8));
+	}
+}
+
+.order {
+
+	&__pop-up {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+		background: #000000;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 470px;
+		height: 280px;
+		transition: all 0.8s ease-out;
+		z-index: 10;
+	}
+
+	&__pop-up-image {
+		margin: -20px 0 20px 0;
+		width: 90px;
+		height: 90px;
+		background: url(styles/images/icons/order_mail-all.svg) no-repeat center center;
+	}
+
+	&__pop-up-caption {
+		color: #FFFFFF;
+		font-family: "RalewayRegular";
+		font-size: 34px;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	&__pop-up-text {
+		margin-top: 10px;
+		font-family: "RalewayRegular";
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: #FFFFFF;
 	}
 }
 

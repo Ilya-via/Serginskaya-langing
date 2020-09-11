@@ -268,3 +268,59 @@ h2 {
 		justify-content: space-between;
 	}
 }
+
+
+// form
+.any-questions,
+.form-page {
+	&__container-for-form {
+		margin-left: 100px;
+		position: relative;
+		z-index: 2;
+
+		button {
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			span {
+				font-size: 16px;
+				line-height: 19px;
+				color: #FFFFFF;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__form-caption {
+		font-family: "RalewayBold";
+		font-size: 30px;
+		line-height: 26px;
+		color: #FFFFFF;
+		margin: 35px 0 50px;
+	}
+
+	&__first_name,
+	&__number,
+	&__email,
+	&__comment {
+		border: none;
+		border-bottom: 1px solid #FFFFFF;
+		background: transparent;
+		width: 250px;
+		height: 30px;
+		font-family: "RalewayRegular";
+		margin-bottom: 40px;
+		color: #FFFFFF;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	input::placeholder {
+		color: #FFFFFF;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+
+}
