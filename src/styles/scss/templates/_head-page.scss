@@ -123,19 +123,18 @@
 	}
 
 	&__container-for-text {
-		// margin: -50px 0 0  100px;
 		position: absolute;
 		bottom: -20px;
 		left: 100px;
 		width: 500px;
 		height: 560px;
 		padding: 35px 30px 0;
-		// background: rgba(0, 0, 0, 0.5);
 		backdrop-filter: blur(20px);
 		overflow-y: auto;
 		-ms-overflow-style: none;
 		background: rgba(0, 0, 0, 0.5);
 		z-index: 4;
+		mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 
 		p {
 			color: #FFFFFF;
@@ -770,29 +769,26 @@
 	&__image-3,
 	&__image-4 {
 		// position: absolute;
-
+		width: 235px;
 		height: 280px;
 		background-position: center center;
-		// background-size: cover;
+		background-size: contain;
 	}
 
 	&__image-1 {
-		width: 230px;
 		background: url(styles/images/head-page/reviews_img-1.png) no-repeat center center;
 	}
 
 	&__image-2 {
-		width: 205px;
 		background: url(styles/images/head-page/reviews_img-2.png) no-repeat center center;
 	}
 
 	&__image-3 {
-		width: 201px;
 		background: url(styles/images/head-page/reviews_img-3.png) no-repeat center center;
+		// background: url(styles/images/head-page/photo-gallery_photo_3.png) no-repeat center center;
 	}
 
 	&__image-4 {
-		width: 235px;
 		background: url(styles/images/head-page/reviews_img-4.png) no-repeat center center;
 	}
 
@@ -838,6 +834,7 @@
 		-ms-overflow-style: none;
 		background: rgba(0, 0, 0, 0.5);
 		z-index: 4;
+		mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 
 		p {
 			color: #FFFFFF;
