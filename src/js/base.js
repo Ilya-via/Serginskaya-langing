@@ -134,10 +134,10 @@ $(document).ready(function () {
 
 	// Bottom line for items
 	$(".head-page__item").on("mouseover", function () {
-		$(this).find(".head-page__line").css({ 'height': '3px', 'bottom': '-3px' });
+		$(this).find(".head-page__line").addClass('head-page__line--hover');
 	});
 	$(".head-page__item").on("mouseout", function () {
-		$(this).find(".head-page__line").css({ 'height': '0', 'bottom': '0' });
+		$(this).find(".head-page__line").removeClass('head-page__line--hover');
 	});
 	// double arrow
 	// $(".open-programs__item-1 a").on("mouseover", function () {

@@ -1,0 +1,667 @@
+@media (max-width: 1200px) {
+	.container__hd {
+		padding: 0 10px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.describe-item__minus {
+		padding: 0 0 0 20px;
+
+		li::before {
+			margin: calc(1em * 1.5 * 0.5) 0 0 -20px;
+			width: 10px;
+			height: 2px;
+			box-shadow: 0px 0px 15px rgba(255, 0, 61, 0.8);
+		}
+	}
+
+	.describe-item__arrow {
+		padding: 0 0 0 22px;
+
+		li::before {
+			margin: calc(1em * 1.72 * 0.25) 0 0 -22px;
+			width: 12px;
+			height: 12px;
+		}
+	}
+
+	.photo-gallery__nav,
+	.reviews__nav {
+
+		.photo-gallery__prev,
+		.photo-gallery__next,
+		.reviews__prev,
+		.reviews__next {
+			width: 40px;
+			height: 40px;
+		}
+
+		.photo-gallery__prev,
+		.reviews__prev {
+			span {
+				width: 12px;
+				height: 10px;
+			}
+		}
+
+		.photo-gallery__next,
+		.reviews__next {
+			span {
+				width: 12px;
+				height: 10px;
+			}
+		}
+	}
+
+	.head-page,
+	.self-made {
+		&__navigation-desktop {
+
+			a {
+				font-size: 16px;
+				line-height: 50px;
+			}
+		}
+
+		&__container-for-describe {
+			h1 {
+				font-size: 40px;
+				line-height: 1.17em;
+			}
+		}
+	}
+
+	.any-questions,
+	.form-page {
+
+		&__first_name,
+		&__number,
+		&__email,
+		&__comment {
+			margin-bottom: 20px;
+		}
+
+		&__form-caption {
+			font-size: 20px;
+			line-height: 26px;
+			margin: 25px 0 20px;
+		}
+	}
+
+	.head-page {
+		&__caption-wrapper {
+			height: 674px;
+			background: url(styles/images/head-page/tablet/page-caption_bg_tablet.png) no-repeat top center;
+			background-size: contain;
+		}
+
+		// &__container-for-describe {
+		// 	margin: 105px 0 80px;
+		// }
+
+		&__container-for-list {
+			margin: 30px 0 40px;
+
+			li {
+				font-size: 18px;
+			}
+		}
+
+		&__button-1 {
+			margin: 0;
+		}
+
+		&__item {
+			// padding: 0 5px;
+			width: 250px;
+			height: 138px;
+			box-shadow: 0px 10px 20px #FF003D;
+
+			.head-page__item-image-1,
+			.head-page__item-image-2,
+			.head-page__item-image-3 {
+				top: -42px;
+				right: 30px;
+				width: 60px;
+				height: 60px;
+				background-size: contain;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
+
+		&__line {
+			width: 90%;
+			height: 3px;
+			bottom: -3px;
+			background: linear-gradient(149.7deg, #FF0000 18.44%, #822EED 139.14%);
+		}
+	}
+
+	.about-author {
+		&__container-for-describe {
+			margin: 30px 0 0 0;
+			background: url(styles/images/head-page/tablet/about-author_bg-photo_tablet.png) no-repeat center center;
+		}
+
+		&__container-for-text {
+			bottom: -20px;
+			left: 45px;
+			width: 390px;
+			padding: 35px 30px 0;
+
+			p {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+
+		h2 {
+			margin-top: 60px;
+		}
+
+		.about-author__name {
+			margin-top: -90px;
+			right: 0;
+			font-size: 70px;
+		}
+
+		&__icon-double-arrow {
+			right: 55px;
+			bottom: -190px;
+			width: 120px;
+			height: 120px;
+			-webkit-animation: smallArrowTablet ease-in-out 1.7s infinite;
+			animation: smallArrowTablet ease-in-out 1.7s infinite;
+		}
+
+		&__icon-double-arrow-big {
+			display: none;
+		}
+	}
+
+	.photo-gallery {
+		&__wrapper {
+			height: 555px;
+			margin-top: 240px;
+			background: linear-gradient(90deg, #410210 0%, #090015 100%);
+		}
+
+		h2 {
+			top: -60px;
+		}
+
+		&__image {
+			background-position: center center;
+			background-size: cover;
+		}
+
+		&__image-1 {
+			left: 10;
+			bottom: -55px;
+			width: 260px;
+			height: 250px;
+			background: url(styles/images/head-page/photo-gallery_photo_1.png) center center cover no-repeat;
+		}
+
+		&__image-2 {
+			left: 60px;
+			top: 60px;
+			width: 350px;
+			height: 200px;
+			background: url(styles/images/head-page/photo-gallery_photo_2.png) center center cover no-repeat;
+		}
+
+		&__image-3 {
+			left: 260px;
+			bottom: 50px;
+			width: 230px;
+			height: 190px;
+			background: url(styles/images/head-page/photo-gallery_photo_3.png) center center cover no-repeat;
+		}
+
+		&__image-4 {
+			align-self: flex-end;
+			margin: 30px 25px 0 0;
+			width: 300px;
+			height: 470px;
+			background: url(styles/images/head-page/photo-gallery_photo_4.png) center center cover no-repeat;
+		}
+	}
+
+	.open-programs {
+		&__container-for-items {
+			margin-top: 180px;
+		}
+
+		h2 {
+			top: -70px;
+		}
+
+		p {
+			max-width: 520px;
+			font-size: 18px;
+			line-height: 21px;
+		}
+
+		&__item-1,
+		&__item-2 {
+			width: 586px;
+			height: 100px;
+			padding: 0 30px;
+
+
+			a {
+				width: 160px;
+				height: 40px;
+				font-size: 16px;
+				line-height: 19px;
+			}
+
+		}
+
+		&__item-1 {
+			margin: 0 0 30px 75px;
+			background: url(styles/images/head-page/self-made_bg.png) no-repeat center center;
+			background-size: cover;
+		}
+
+		&__item-2 {
+			background: url(styles/images/head-page/coach-session_bg.png) no-repeat center center;
+			background-size: cover;
+		}
+
+		&__double-arrow-down,
+		&__double-arrow-right {
+			background: url(styles/images/icons/open-programs_double_arrow_pink.svg) no-repeat center center;
+			background-size: cover;
+			width: 80px;
+			height: 80px;
+		}
+
+		&__double-arrow-down {
+			bottom: -95px;
+			right: 250px;
+			-webkit-animation: openProgramsArrowDownTablet ease-in-out 1.7s infinite;
+			animation: openProgramsArrowDownTablet ease-in-out 1.7s infinite;
+		}
+
+		&__double-arrow-right {
+			filter: drop-shadow(0px 0px 30px #822EED);
+			top: 10px;
+			right: 30px;
+		}
+	}
+
+	.coaching-sessions {
+		&__wrapper {
+			min-height: 1500px;
+			margin-top: 160px;
+			background: url(styles/images/head-page/tablet/coaching-sessions_bg_tablet.png) no-repeat center center;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		h2 {
+			margin: 20px 0 30px 0;
+		}
+
+
+		p,
+		li {
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		&__item-1 {
+			padding-top: 30px;
+
+			p {
+				margin-bottom: 10px;
+			}
+
+			ul li {
+				line-height: 24px;
+			}
+		}
+
+		&__item-1-text {
+			max-width: 340px;
+		}
+
+		&__item-1-photo {
+			margin-top: 60px;
+			width: 360px;
+			height: 520px;
+			background: url(styles/images/head-page/tablet/coaching-sessions_photo-1_tablet.png) no-repeat center center;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		&__item-1-block--gradient {
+			margin-top: -45px;
+			left: -14%;
+			width: 114%;
+			height: 90px;
+		}
+
+		&__item-2 {
+			margin: 45px 0 40px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.coaching-sessions__caption {
+				margin-bottom: 10px;
+			}
+		}
+
+		&__item-3-photo {
+			width: 300px;
+			height: 460px;
+			background: url(styles/images/head-page/tablet/coaching-sessions_photo-2_tablet.png) no-repeat center center;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		&__item-3-text {
+			max-width: 420px;
+		}
+
+		&__item-3-block--gradient {
+			margin: 20px 0;
+			padding: 5px 5px 5px 0;
+			background: linear-gradient(-90deg, rgba(255, 0, 0, 0.6) 0%, rgba(130, 46, 237, 0.6) 100%);
+
+			p {
+				max-width: 420px;
+
+				strong {
+					font-size: 14px;
+					line-height: 24px;
+				}
+			}
+		}
+
+	}
+
+	.cooperation-options {
+		margin: 120px 0 0 0;
+
+		// h2 {
+		// 	margin-bottom: 40px;
+		// }
+
+		&__item-1-text,
+		&__item-2-text,
+		li {
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		&__item-caption {
+			font-size: 20px;
+			line-height: 23px;
+			margin: 0 0 10px 0;
+		}
+
+		&__item-note {
+			font-size: 10px;
+			line-height: 20px;
+			margin: 10px 0;
+		}
+
+		&__container-for-price,
+		ul {
+			margin: 10px 0 0 0;
+		}
+
+		&__price {
+			font-size: 20px;
+			line-height: 36px;
+		}
+
+		&__item-1,
+		&__item-2,
+		&__item-3 {
+			max-width: 230px;
+		}
+
+		&__item-1,
+		&__item-2 {
+			padding: 15px 8px;
+		}
+
+		&__item-1 {
+			max-height: 530px;
+		}
+
+		&__item-3-text-1,
+		&__item-3-text-2 {
+			font-size: 12px;
+			line-height: 20px;
+		}
+
+		&__item-3-text-1 {
+			margin-bottom: 10px;
+		}
+
+		&__item-3-text-2 {
+			margin-bottom: 15px;
+		}
+
+		&__button-1,
+		&__button-2 {
+			width: 230px;
+			height: 50px;
+
+			span {
+				font-size: 14px;
+				line-height: 16px;
+			}
+		}
+
+		&__button-2 {
+			margin: 15px 0 0 0;
+		}
+
+		&__icon-double-arrow {
+			right: 75px;
+			bottom: 50px;
+			width: 80px;
+			height: 80px;
+			-webkit-animation: cooperationOptionsArrowTablet ease-in-out 1.7s infinite;
+			animation: cooperationOptionsArrowTablet ease-in-out 1.7s infinite;
+		}
+	}
+
+	.reviews {
+		&__wrapper {
+			padding-top: 40px;
+			min-height: 691px;
+			margin-top: 125px;
+			background: url(styles/images/head-page/tablet/reviews_photo_bg_tablet.png) no-repeat center center;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		&__paginator-line {
+			margin: 30px auto 35px;
+		}
+
+		&__carousel-item {
+			height: 470px;
+		}
+
+		&__block {
+			width: 380px;
+			height: 235px;
+		}
+
+		&__container-for-text {
+			max-width: 236px;
+
+			p {
+				font-size: 12px;
+				line-height: 22px;
+			}
+
+			p strong {
+				font-size: 12px;
+				line-height: 22px;
+
+			}
+
+		}
+
+		&__container-for-text.right {
+			padding: 8px 8px 8px 20px;
+		}
+
+		&__container-for-text.left {
+			padding: 8px 20px 8px 8px;
+		}
+
+		&__image-1,
+		&__image-2,
+		&__image-3,
+		&__image-4 {
+			width: 197px;
+			height: 235px;
+		}
+
+		.reviews__nav {
+			bottom: -65px;
+			right: 100px;
+		}
+	}
+
+	.work-together {
+		&__container-for-describe {
+			margin: 60px 0 0 0;
+			height: 410px;
+			background: url(styles/images/head-page/tablet/work-together_bg-photo_tablet.png) no-repeat center center;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		&__container-for-text {
+			left: 65px;
+			width: 430px;
+			height: 400px;
+			padding: 20px 45px 0;
+
+			p {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			p strong {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+
+	.any-questions {
+		margin: 130px 0 0;
+
+		&__container-for-items {
+			margin: 20px 0 0 0;
+			min-height: 460px;
+		}
+
+		&__gradient-block {
+			height: 312px;
+		}
+
+		&__author-photo {
+			top: -75px;
+			right: 50px;
+			width: 360px;
+			height: 460px;
+			background: url(styles/images/head-page/tablet/any-questions_photo-1_tablet.png) no-repeat center center;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		&__container-for-form {
+			margin-left: 75px;
+		}
+
+		&__button-send {
+			width: 240px;
+			height: 45px;
+			bottom: -125px;
+			left: 0;
+		}
+
+		&__icon-double-arrow-big-right {
+			display: none;
+		}
+	}
+
+	.footer {
+		&__wrapper {
+			height: 406px;
+		}
+
+		&__caption {
+			font-size: 20px;
+		}
+
+		li a {
+			font-size: 14px;
+		}
+
+		.footer__ending {
+			bottom: 0;
+		}
+	}
+}
+
+
+
+
+@media (max-width: 765px) {
+
+	.any-questions,
+	.form-page {
+		&__container-for-form {
+			margin-left: 75px;
+
+			button {
+				display: flex;
+				align-items: center;
+				text-align: center;
+
+				span {
+					font-size: 16px;
+					line-height: 19px;
+					color: #FFFFFF;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		&__form-caption {
+			font-size: 24px;
+			line-height: 34px;
+			margin: 20px 0;
+		}
+
+		&__first_name,
+		&__number,
+		&__email,
+		&__comment {
+			width: 230px;
+			height: 25px;
+			// margin-bottom: 20px;
+		}
+	}
+}

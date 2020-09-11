@@ -9,6 +9,17 @@
 	30% {bottom: -260px;}
 	100% {bottom: -235px;}
 }
+@-webkit-keyframes smallArrowTablet {
+	0% {bottom: -190px;}
+	30% {bottom: -215px;}
+	100% {bottom: -190px;}
+}
+@keyframes smallArrowTablet {
+	0% {bottom: -190px;}
+	30% {bottom: -215px;}
+	100% {bottom: -190px;}
+}
+
 
 @-webkit-keyframes bigArrow {
 	0% {top: -150px;}
@@ -31,6 +42,16 @@
 	30% {bottom: -155px;}
 	100% {bottom: -135px;}
 }
+@-webkit-keyframes openProgramsArrowDownTablet {
+	0% {bottom: -95px;}
+	30% {bottom: -125px;}
+	100% {bottom: -95px;}
+}
+@keyframes openProgramsArrowDownTablet {
+	0% {bottom: -95px;}
+	30% {bottom: -125px;}
+	100% {bottom: -95px;}
+}
 
 @-webkit-keyframes openProgramsArrowRight {
 	0% {right: 20px;}
@@ -49,6 +70,16 @@
 	100% {bottom: 30px;}
 }
 @keyframes cooperationOptionsArrow {
+	0% {bottom: 30px;}
+	60% {bottom: 60px;}
+	100% {bottom: 30px;}
+}
+@-webkit-keyframes cooperationOptionsArrowTablet {
+	0% {bottom: 30px;}
+	60% {bottom: 60px;}
+	100% {bottom: 30px;}
+}
+@keyframes cooperationOptionsArrowTablet {
 	0% {bottom: 30px;}
 	60% {bottom: 60px;}
 	100% {bottom: 30px;}

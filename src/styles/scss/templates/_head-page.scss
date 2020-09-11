@@ -97,6 +97,11 @@
 		background: linear-gradient(149.7deg, #FF0000 18.44%, #822EED 139.14%);
 	}
 
+	&__line--hover {
+		height: 3px;
+		bottom: -3px;
+	}
+
 	&__item:hover {
 		box-shadow: 0px 10px 20px #FF003D;
 		transition: 0.15s linear;
@@ -394,7 +399,7 @@
 -----------------------------------------------------------------*/
 .coaching-sessions {
 	&__wrapper {
-		height: 1555px;
+		min-height: 1555px;
 		margin-top: 340px;
 		background: url(styles/images/head-page/coaching-sessions_bg.png) no-repeat center center;
 		background-position: center center;
@@ -469,6 +474,9 @@
 
 	&__item-2 {
 		margin: 80px 0 70px;
+		.coaching-sessions__caption {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__item-3 {
@@ -493,14 +501,11 @@
 	}
 
 	&__item-3-block--gradient {
+		position: relative;
 		display: flex;
 		justify-content: flex-end;
-		position: relative;
 		margin: 20px 0;
-		padding: 25px;
-		left: -500px;
-		width: 1170px;
-		height: 130px;
+		padding: 20px 20px 20px 0;
 		background: linear-gradient(-90deg, rgba(255, 0, 0, 0.6) 0%, rgba(130, 46, 237, 0.6) 100%);
 
 		p {
@@ -513,6 +518,15 @@
 			}
 
 		}
+	}
+	&__item-3-block--gradient:before {
+		top: 0;
+		left: -50px;
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 50px;
+		background:linear-gradient(-90deg, rgba(130, 46, 237, 0.6) 0%, rgba(130, 46, 237, 0.7) 100%);
 	}
 
 	&__item-3-list-caption {
@@ -592,7 +606,7 @@
 	}
 
 	&__item-1 {
-		height: 635px;
+		max-height: 635px;
 	}
 
 	&__item-3-text-1,
@@ -684,7 +698,7 @@
 .reviews {
 	&__wrapper {
 		padding-top: 50px;
-		height: 895px;
+		min-height: 895px;
 		margin-top: 125px;
 		background: url(styles/images/head-page/reviews_photo_bg.png) no-repeat center center;
 		background-position: center center;
@@ -694,9 +708,6 @@
 	&__paginator-line {
 		width: 250px;
 		height: 2px;
-		// background: url(styles/images/icons/reviews_line.svg) no-repeat center center;
-		// background-position: center center;
-		// background-size: cover;
 		margin: 80px auto 35px;
 	}
 
@@ -875,7 +886,7 @@
 	&__gradient-block {
 		position: absolute;
 		z-index: 1;
-		width: 1114px;
+		width: 600px;
 		height: 416px;
 		background: linear-gradient(192.7deg, rgba(255, 0, 0, 0.7) -23.83%, rgba(130, 46, 237, 0.7) 79.18%);
 	}
