@@ -221,11 +221,15 @@
 	}
 
 	&__container-for-items {
+		margin: 0 auto;
 		position: relative;
 		max-width: 1170px;
 		max-height: 720px;
 	}
-
+	&__container-for-items-phone {
+		display: none;
+		// height: 555px;
+	}
 	&__carousel-item {
 		display: flex;
 		flex-direction: column;

@@ -176,6 +176,8 @@ h2 {
 
 	.photo-gallery__prev,
 	.photo-gallery__next,
+	.photo-gallery__prev-phone,
+	.photo-gallery__next-phone,
 	.reviews__prev-phone,
 	.reviews__next-phone,
 	.reviews__prev,
@@ -189,6 +191,7 @@ h2 {
 	}
 
 	.photo-gallery__prev,
+	.photo-gallery__prev-phone,
 	.reviews__prev-phone,
 	.reviews__prev {
 		span {
@@ -198,10 +201,12 @@ h2 {
 			background: url(styles/images/icons/photo-gallery_arrow-active.svg) center center no-repeat;
 			background-size: cover;
 		}
+
 		background: linear-gradient(137.97deg, #FF0000 -206.95%, #822EED 203.74%) !important;
 	}
 
 	.photo-gallery__next,
+	.photo-gallery__next-phone,
 	.reviews__next-phone,
 	.reviews__next {
 		span {
@@ -211,12 +216,15 @@ h2 {
 			background: url(styles/images/icons/photo-gallery_arrow-active.svg) center center no-repeat;
 			background-size: cover;
 		}
+
 		background:linear-gradient(-47.97deg, #FF0000 -206.95%, #822EED 203.74%) !important;
 		transform: rotate(180deg);
 	}
 
 	.photo-gallery__prev.disabled,
 	.photo-gallery__next.disabled,
+	.photo-gallery__prev-phone.disabled,
+	.photo-gallery__next-phone.disabled,
 	.reviews__prev-phone.disabled,
 	.reviews__next-phone.disabled,
 	.reviews__prev.disabled,
@@ -232,6 +240,8 @@ h2 {
 
 	.photo-gallery__prev:not(.disabled):hover,
 	.photo-gallery__next:not(.disabled):hover,
+	.photo-gallery__prev-phone:not(.disabled):hover,
+	.photo-gallery__next-phone:not(.disabled):hover,
 	.reviews__prev-phone:not(.disabled):hover,
 	.reviews__next-phone:not(.disabled):hover,
 	.reviews__prev:not(.disabled):hover,
