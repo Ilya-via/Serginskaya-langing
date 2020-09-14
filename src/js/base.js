@@ -8,7 +8,8 @@ let eventObject = {
 		sliderLength: 0,
 		lastSlideNumber: 0,
 		currentSlide: 1,
-	}
+	},
+	hamburgerTurn: 0
 };
 
 // Function
@@ -127,7 +128,7 @@ function animatedScroll(event, context) {
 }
 
 $(document).ready(function () {
-	$('.head-page__item-3, .open-programs__item-2 a, .head-page__navigation-desktop a[href="#about-author"], .footer__menu a[href="#about-author"], .head-page__navigation-desktop a[href="#open-programs"], .footer__menu a[href="#open-programs"], .head-page__navigation-desktop a[href="#coaching-sessions"], .footer__menu a[href="#coaching-sessions"], .head-page__navigation-desktop a[href="#reviews"], .footer__menu a[href="#reviews"], .head-page__navigation-desktop a[href="#footer"]').on("click", function (e) {
+	$('.head-page__item-3, .open-programs__item-2 a, .head-page__navigation-desktop a[href="#about-author"], .footer__menu a[href="#about-author"], .head-page__navigation-desktop a[href="#open-programs"], .footer__menu a[href="#open-programs"], .head-page__navigation-desktop a[href="#coaching-sessions"], .footer__menu a[href="#coaching-sessions"], .head-page__navigation-desktop a[href="#reviews"], .footer__menu a[href="#reviews"], .head-page__navigation-desktop a[href="#footer"], .header__menu-tablet a[href="#about-author"], .header__menu-tablet a[href="#open-programs"], .header__menu-tablet a[href="#coaching-sessions"], .header__menu-tablet a[href="#reviews"], .header__menu-tablet a[href="#footer"]').on("click", function (e) {
 		animatedScroll(e, this);
 	});
 
@@ -222,28 +223,24 @@ $(document).ready(function () {
 });
 
 
-
-
-
-
-
-// function findContainerForBlock(container) {
-// 	let ContainerForCarousel = document.querySelectorAll(container);
-// 	return ContainerForCarousel.length
-// }
-// 	if (!(findContainerForBlock('.head-object') === 0)) {}
-
-
-
-// Accordion
-// function accordionVisibility(blockWithItems) {
-// 	if ($(blockWithItems).hasClass('unvisible')) {
-// 		$(blockWithItems).removeClass("unvisible");
-// 	} else {
-// 		$(blockWithItems).addClass("unvisible");
-// 	}
-// }
-
-
-
-
+// ANIMATION HAMBURGER MENU
+$(document).ready(function () {
+	$(document).on("click", "#hamburger", function () {
+		$('#hamburger-icon').toggleClass('hamburger-active');
+		eventObject.hamburgerTurn++;
+		if ((eventObject.hamburgerTurn) % 2 == 0) {
+			$('.header__menu-tablet').fadeOut("slow").removeClass("tick");
+		} else {
+			$('.header__menu-tablet').fadeIn("slow").addClass("tick");
+		}
+	});
+});
+// MENU TABLET UNVISSIBLE - EVENT SCROLL
+window.addEventListener('scroll', trackScroll);
+function trackScroll() {
+	if (window.pageYOffset > 200 && $('.header__menu-tablet').hasClass("tick")) {
+		$('#hamburger-icon').toggleClass('hamburger-active');
+		$('.header__menu-tablet').fadeOut("slow").removeClass("tick");
+		eventObject.hamburgerTurn++;
+	}
+}

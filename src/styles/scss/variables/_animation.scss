@@ -19,6 +19,26 @@
 	30% {bottom: -215px;}
 	100% {bottom: -190px;}
 }
+@-webkit-keyframes smallArrowPhone {
+	0% {bottom: -540px;}
+	30% {bottom: -565px;}
+	100% {bottom: -540px;}
+}
+@keyframes smallArrowPhone {
+	0% {bottom: -540px;}
+	30% {bottom: -565px;}
+	100% {bottom: -540px;}
+}
+@-webkit-keyframes smallArrowPhoneSmall {
+	0% {bottom: -570px;}
+	30% {bottom: -595px;}
+	100% {bottom: -570px;}
+}
+@keyframes smallArrowPhoneSmall {
+	0% {bottom: -570px;}
+	30% {bottom: -595px;}
+	100% {bottom: -570px;}
+}
 
 
 @-webkit-keyframes bigArrow {
@@ -83,6 +103,16 @@
 	0% {bottom: 30px;}
 	60% {bottom: 60px;}
 	100% {bottom: 30px;}
+}
+@-webkit-keyframes cooperationOptionsArrowPhone {
+	0% {bottom: -120px;}
+	60% {bottom: -90px;}
+	100% {bottom: -120px;}
+}
+@keyframes cooperationOptionsArrowTablet {
+	0% {bottom: -120px;}
+	60% {bottom: -90px;}
+	100% {bottom: -120px;}
 }
 
 @-webkit-keyframes bigArrowRight {

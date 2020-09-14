@@ -13,11 +13,25 @@
 
 <body>
 	<main>
-		<section class=" head-page__caption">
+		<section class=" head-page__caption ">
 			<div class="container__fhd">
 				<div class="head-page__caption-wrapper">
 					<div class="container__hd">
+						<div class="header__hamburger" id="hamburger">
+							<a id="hamburger-icon" href="#">
+								<span class="line line-1"></span>
+								<span class="line line-2"></span>
+								<span class="line line-3"></span>
+							</a>
+						</div>
 						<nav class="head-page__navigation">
+							<ul class="header__menu-tablet">
+								<li><a href="#about-author">Обо мне</a></li>
+								<li><a href="#open-programs">Открытые программы</a></li>
+								<li><a href="#coaching-sessions">Коучинг</a></li>
+								<li><a href="#reviews">Отзывы</a></li>
+								<li><a href="#footer">Контакты</a></li>
+							</ul>
 							<ul class="head-page__navigation-desktop">
 								<li><a href="#about-author">Обо мне</a></li>
 								<li><a href="#open-programs">Открытые программы</a></li>
@@ -101,7 +115,7 @@
 			</div>
 		</section>
 
-		<section class="photo-gallery">
+		<section class="photo-gallery unvisible">
 			<div class="container__fhd">
 				<div class="photo-gallery__wrapper">
 					<div class="container__hd">
@@ -139,7 +153,7 @@
 			</div>
 		</section>
 
-		<section class="open-programs" id="open-programs">
+		<section class="open-programs unvisible" id="open-programs">
 			<div class="container__fhd">
 				<div class="container__hd">
 					<h2>Открытые программы</h2>
@@ -160,7 +174,7 @@
 			</div>
 		</section>
 
-		<section class="coaching-sessions" id="coaching-sessions">
+		<section class="coaching-sessions unvisible" id="coaching-sessions">
 			<div class="container__fhd">
 				<div class="coaching-sessions__wrapper">
 					<div class="container__hd">
@@ -242,7 +256,7 @@
 			</div>
 		</section>
 
-		<section class="cooperation-options">
+		<section class="cooperation-options unvisible">
 			<div class="container__fhd">
 				<div class="container__hd">
 					<h2>Варианты сотрудничества</h2>
@@ -305,7 +319,7 @@
 			</div>
 		</section>
 
-		<section class="reviews" id="reviews">
+		<section class="reviews unvisible" id="reviews">
 			<div class="container__fhd">
 				<div class="reviews__wrapper">
 					<div class="container__hd">
@@ -325,115 +339,141 @@
 						</div>
 						<div class="reviews__container-for-items">
 							<div class="reviews__carousel-item" data-slide-number="1">
-								<div class="reviews__block">
-									<div class="reviews__container-for-text right">
-										<p><strong>Елена Мальцева</strong></p>
-										<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно дизайн.
-											Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+								<div class="reviews__row-container">
+									<div class="reviews__block">
+										<div class="reviews__container-for-text right">
+											<p><strong>Елена Мальцева</strong></p>
+											<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно
+												дизайн.
+												Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
+										<div class="reviews__image-1 wow fadeInLeftBig">
+										</div>
 									</div>
-									<div class="reviews__image-1 wow fadeInLeftBig">
+									<div class="reviews__block">
+										<div class="reviews__container-for-text right">
+											<p><strong>Анна Христич</strong></p>
+											<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно
+												дизайн.
+												Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
+										<div class="reviews__image-2 wow fadeInDownBig"></div>
 									</div>
 								</div>
-								<div class="reviews__block">
-									<div class="reviews__container-for-text right">
-										<p><strong>Анна Христич</strong></p>
-										<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно дизайн.
-											Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
-									</div>
-									<div class="reviews__image-2 wow fadeInDownBig"></div>
-								</div>
-								<div class="reviews__block">
-									<div class="reviews__image-3 wow fadeInUpBig"></div>
-									<div class="reviews__container-for-text left">
-										<p><strong>Сергей Паращенко</strong></p>
-										<p>Паращенко Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило.
-											Конечно дизайн. Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
-									</div>
 
-								</div>
-								<div class="reviews__block">
-									<div class="reviews__image-4 wow fadeInRightBig"></div>
-									<div class="reviews__container-for-text left">
-										<p><strong>Ольга Соловьева</strong></p>
-										<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно дизайн.
-											Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
-									</div>
+								<div class="reviews__row-container">
+									<div class="reviews__block">
+										<div class="reviews__image-3 wow fadeInUpBig"></div>
+										<div class="reviews__container-for-text left">
+											<p><strong>Сергей Паращенко</strong></p>
+											<p>Паращенко Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило.
+												Конечно дизайн. Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
 
+									</div>
+									<div class="reviews__block">
+										<div class="reviews__image-4 wow fadeInRightBig"></div>
+										<div class="reviews__container-for-text left">
+											<p><strong>Ольга Соловьева</strong></p>
+											<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно
+												дизайн.
+												Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
+									</div>
 								</div>
+
+
 							</div>
 
 							<div class="reviews__carousel-item unvisible" data-slide-number="2">
-								<div class="reviews__block">
-									<div class="reviews__container-for-text right">
-										<p><strong>Елена Мальцева</strong></p>
-										<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно дизайн.
-											Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+								<div class="reviews__row-container">
+									<div class="reviews__block">
+										<div class="reviews__container-for-text right">
+											<p><strong>Елена Мальцева</strong></p>
+											<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно
+												дизайн.
+												Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
+										<div class="reviews__image-1 wow fadeInLeftBig">
+										</div>
 									</div>
-									<div class="reviews__image-1 wow fadeInLeftBig">
+									<div class="reviews__block">
+										<div class="reviews__container-for-text right">
+											<p><strong>Анна Христич</strong></p>
+											<p>Автомобиль брал новым, в автосалоне.</p>
+										</div>
+										<div class="reviews__image-2 wow fadeInDownBig"></div>
 									</div>
 								</div>
-								<div class="reviews__block">
-									<div class="reviews__container-for-text right">
-										<p><strong>Анна Христич</strong></p>
-										<p>Автомобиль брал новым, в автосалоне.</p>
-									</div>
-									<div class="reviews__image-2 wow fadeInDownBig"></div>
-								</div>
-								<div class="reviews__block">
-									<div class="reviews__image-3 wow fadeInUpBig"></div>
-									<div class="reviews__container-for-text left">
-										<p><strong>Сергей Паращенко</strong></p>
-										<p>Паращенко Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило.
-											Конечно дизайн. Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
-									</div>
+								<div class="reviews__row-container">
+									<div class="reviews__block">
+										<div class="reviews__image-3 wow fadeInUpBig"></div>
+										<div class="reviews__container-for-text left">
+											<p><strong>Сергей Паращенко</strong></p>
+											<p>Паращенко Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило.
+												Конечно дизайн. Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
 
-								</div>
-								<div class="reviews__block">
-									<div class="reviews__image-4 wow fadeInRightBig"></div>
-									<div class="reviews__container-for-text left">
-										<p><strong>Ольга Соловьева</strong></p>
-										<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно дизайн.
-											Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
 									</div>
+									<div class="reviews__block">
+										<div class="reviews__image-4 wow fadeInRightBig"></div>
+										<div class="reviews__container-for-text left">
+											<p><strong>Ольга Соловьева</strong></p>
+											<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно
+												дизайн.
+												Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
 
+									</div>
 								</div>
+
+
 							</div>
 
 							<div class="reviews__carousel-item unvisible" data-slide-number="3">
-								<div class="reviews__block">
-									<div class="reviews__container-for-text right">
-										<p><strong>Елена Мальцева</strong></p>
-										<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно дизайн.
-											Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+								<div class="reviews__row-container">
+									<div class="reviews__block">
+										<div class="reviews__container-for-text right">
+											<p><strong>Елена Мальцева</strong></p>
+											<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно
+												дизайн.
+												Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
+										<div class="reviews__image-1 wow fadeInLeftBig">
+										</div>
 									</div>
-									<div class="reviews__image-1 wow fadeInLeftBig">
+									<div class="reviews__block">
+										<div class="reviews__container-for-text right">
+											<p><strong>Анна Христич</strong></p>
+											<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно
+												дизайн.
+												Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
+										<div class="reviews__image-2 wow fadeInDownBig"></div>
 									</div>
 								</div>
-								<div class="reviews__block">
-									<div class="reviews__container-for-text right">
-										<p><strong>Анна Христич</strong></p>
-										<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно дизайн.
-											Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
-									</div>
-									<div class="reviews__image-2 wow fadeInDownBig"></div>
-								</div>
-								<div class="reviews__block">
-									<div class="reviews__image-3 wow fadeInUpBig"></div>
-									<div class="reviews__container-for-text left">
-										<p><strong>Сергей Паращенко</strong></p>
-										<p>Автомобиль брал новым, в автосалоне.</p>
-									</div>
+								<div class="reviews__row-container">
+									<div class="reviews__block">
+										<div class="reviews__image-3 wow fadeInUpBig"></div>
+										<div class="reviews__container-for-text left">
+											<p><strong>Сергей Паращенко</strong></p>
+											<p>Автомобиль брал новым, в автосалоне.</p>
+										</div>
 
-								</div>
-								<div class="reviews__block">
-									<div class="reviews__image-4 wow fadeInRightBig"></div>
-									<div class="reviews__container-for-text left">
-										<p><strong>Ольга Соловьева</strong></p>
-										<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно дизайн.
-											Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
 									</div>
+									<div class="reviews__block">
+										<div class="reviews__image-4 wow fadeInRightBig"></div>
+										<div class="reviews__container-for-text left">
+											<p><strong>Ольга Соловьева</strong></p>
+											<p>Автомобиль брал новым, в автосалоне. Выбор длительный и осознанный. Что зацепило. Конечно
+												дизайн.
+												Красивый авто. Внутри уютно, удобно, а водителю еще и комфортно</p>
+										</div>
 
+									</div>
 								</div>
+
+
 							</div>
 
 							<div class="reviews__nav">
@@ -446,7 +486,7 @@
 			</div>
 		</section>
 
-		<section class="work-together" id="work-together">
+		<section class="work-together unvisible" id="work-together">
 			<div class="container__fhd">
 				<div class="container__hd">
 					<h2>Когда нам стоит работать вместе</h2>
@@ -475,7 +515,7 @@
 			</div>
 		</section>
 
-		<section class="any-questions">
+		<section class="any-questions unvisible">
 			<div class="container__fhd">
 				<div class="container__hd">
 					<h2>Остались вопросы?</h2>
