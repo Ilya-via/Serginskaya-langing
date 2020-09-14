@@ -176,6 +176,8 @@ h2 {
 
 	.photo-gallery__prev,
 	.photo-gallery__next,
+	.reviews__prev-phone,
+	.reviews__next-phone,
 	.reviews__prev,
 	.reviews__next {
 		border: none;
@@ -187,6 +189,7 @@ h2 {
 	}
 
 	.photo-gallery__prev,
+	.reviews__prev-phone,
 	.reviews__prev {
 		span {
 			display: block;
@@ -195,11 +198,11 @@ h2 {
 			background: url(styles/images/icons/photo-gallery_arrow-active.svg) center center no-repeat;
 			background-size: cover;
 		}
-
 		background: linear-gradient(137.97deg, #FF0000 -206.95%, #822EED 203.74%) !important;
 	}
 
 	.photo-gallery__next,
+	.reviews__next-phone,
 	.reviews__next {
 		span {
 			display: block;
@@ -208,13 +211,14 @@ h2 {
 			background: url(styles/images/icons/photo-gallery_arrow-active.svg) center center no-repeat;
 			background-size: cover;
 		}
-
 		background:linear-gradient(-47.97deg, #FF0000 -206.95%, #822EED 203.74%) !important;
 		transform: rotate(180deg);
 	}
 
 	.photo-gallery__prev.disabled,
 	.photo-gallery__next.disabled,
+	.reviews__prev-phone.disabled,
+	.reviews__next-phone.disabled,
 	.reviews__prev.disabled,
 	.reviews__next.disabled {
 		cursor: not-allowed;
@@ -228,6 +232,8 @@ h2 {
 
 	.photo-gallery__prev:not(.disabled):hover,
 	.photo-gallery__next:not(.disabled):hover,
+	.reviews__prev-phone:not(.disabled):hover,
+	.reviews__next-phone:not(.disabled):hover,
 	.reviews__prev:not(.disabled):hover,
 	.reviews__next:not(.disabled):hover {
 		cursor: pointer;
@@ -398,7 +404,7 @@ ul.header__menu-tablet {
 	position: relative;
 	z-index: 11;
 	// top: 20px;
-	margin:  10px 0 0 -7px;
+	margin: 10px 0 0 -7px;
 	// left: 20px;
 	width: 50px;
 	height: 50px;

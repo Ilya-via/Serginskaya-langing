@@ -33,6 +33,8 @@
 
 		.photo-gallery__prev,
 		.photo-gallery__next,
+		.reviews__prev-phone,
+		.reviews__next-phone,
 		.reviews__prev,
 		.reviews__next {
 			width: 40px;
@@ -40,6 +42,7 @@
 		}
 
 		.photo-gallery__prev,
+		.reviews__prev-phone,
 		.reviews__prev {
 			span {
 				width: 12px;
@@ -48,6 +51,7 @@
 		}
 
 		.photo-gallery__next,
+		.reviews__next-phone,
 		.reviews__next {
 			span {
 				width: 12px;
@@ -526,7 +530,8 @@
 			background-size: cover;
 		}
 
-		&__paginator-line {
+		&__paginator-line,
+		&__paginator-line-phone {
 			margin: 30px auto 35px;
 		}
 
@@ -986,6 +991,57 @@
 		}
 	}
 
+	.reviews {
+		&__wrapper {
+			min-height: 440px;
+		}
+
+		&__paginator-line {
+			display: none;
+		}
+		&__paginator-line-phone {
+			display: block;
+		}
+
+		&__container-for-items {
+			display: none;
+		}
+
+		.reviews__container-for-items-phone {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__carousel-item {
+			height: 215px;
+		}
+
+		&__block {
+			width: 300px;
+			height: 215px;
+		}
+
+		&__container-for-text {
+			max-width: 184px;
+		}
+
+		&__image-1,
+		&__image-2,
+		&__image-3,
+		&__image-4 {
+			width: 120px;
+			height: 215px;
+		}
+
+		&__container-for-text.right {
+			padding: 8px 8px 8px 10px;
+		}
+
+		.reviews__nav {
+			bottom: -75px;
+			right: 100px;
+		}
+	}
 
 	.work-together {
 		&__container-for-describe {
@@ -1033,7 +1089,6 @@
 	}
 
 }
-
 
 @media (max-width: 568px) {
 	.head-page {
@@ -1143,6 +1198,12 @@
 		&__icon-double-arrow {
 			-webkit-animation: smallArrowPhoneSmall ease-in-out 1.7s infinite;
 			animation: smallArrowPhoneSmall ease-in-out 1.7s infinite;
+		}
+	}
+
+	.reviews {
+		.reviews__nav {
+			right: 10px;
 		}
 	}
 }

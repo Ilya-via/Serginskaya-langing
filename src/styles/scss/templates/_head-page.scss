@@ -714,10 +714,15 @@
 		justify-content: center;
 	}
 
-	&__paginator-line {
+	&__paginator-line,
+	&__paginator-line-phone {
 		width: 250px;
 		height: 2px;
 		margin: 80px auto 35px;
+	}
+
+	&__paginator-line-phone {
+		display: none;
 	}
 
 	&__container-for-items {
@@ -725,6 +730,10 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
+	}
+
+	&__container-for-items-phone {
+		display: none;
 	}
 
 	&__carousel-item {

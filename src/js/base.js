@@ -9,16 +9,21 @@ let eventObject = {
 		lastSlideNumber: 0,
 		currentSlide: 1,
 	},
+	reviewsPhone = {
+		sliderLength: 0,
+		lastSlideNumber: 0,
+		currentSlide: 1,
+	},
 	hamburgerTurn: 0
 };
 
-// Function
+// reviews Tablet
 function checkSliderPropertiesforReviews() {
-	eventObject.reviews.sliderLength = parseInt($(".reviews__carousel-item[data-slide-number]").length);
+	eventObject.reviews.sliderLength = parseInt($(".reviews__container-for-items .reviews__carousel-item[data-slide-number]").length);
 	eventObject.reviews.lastSlideNumber = eventObject.reviews.sliderLength;
 }
 function checkCurrentSlideforReviews() {
-	eventObject.reviews.currentSlide = parseInt($(".reviews__carousel-item:not(.unvisible)").attr('data-slide-number'));
+	eventObject.reviews.currentSlide = parseInt($(".reviews__container-for-items .reviews__carousel-item:not(.unvisible)").attr('data-slide-number'));
 }
 
 function checkSlideNumberPrevforReviews() {
@@ -45,6 +50,43 @@ function checkSlideNumberNextforReviews() {
 		}
 	}
 }
+
+// reviews Phone
+function checkSliderPropertiesforReviewsPhone() {
+	eventObject.reviewsPhone.sliderLength = parseInt($(".reviews__container-for-items-phone .reviews__carousel-item[data-slide-number]").length);
+	eventObject.reviewsPhone.lastSlideNumber = eventObject.reviewsPhone.sliderLength;
+}
+function checkCurrentSlideforReviewsPhone() {
+	eventObject.reviewsPhone.currentSlide = parseInt($(".reviews__container-for-items-phone .reviews__carousel-item:not(.unvisible)").attr('data-slide-number'));
+}
+
+function checkSlideNumberPrevforReviewsPhone() {
+	if (eventObject.reviewsPhone.currentSlide == 1) {
+
+		if (!($(".reviews__prev-phone").hasClass('disabled'))) {
+			$(".reviews__prev-phone").addClass('disabled');
+		}
+	} else {
+		if ($(".reviews__prev-phone").hasClass('disabled')) {
+			$(".reviews__prev-phone").removeClass('disabled');
+		}
+	}
+}
+
+function checkSlideNumberNextforReviewsPhone() {
+	if (eventObject.reviewsPhone.currentSlide == eventObject.reviewsPhone.lastSlideNumber) {
+		if (!($(".reviews__next-phone").hasClass('disabled'))) {
+			$(".reviews__next-phone").addClass('disabled');
+		}
+	} else {
+		if ($(".reviews__next-phone").hasClass('disabled')) {
+			$(".reviews__next-phone").removeClass('disabled');
+		}
+	}
+}
+
+
+// photo-gallery
 function checkSliderProperties() {
 	eventObject.photoGallery.sliderLength = parseInt($(".photo-gallery__carousel-item[data-slide-number]").length);
 	eventObject.photoGallery.lastSlideNumber = eventObject.photoGallery.sliderLength;
@@ -78,10 +120,16 @@ function checkSlideNumberNext() {
 }
 
 // Paginator-line
-function changeWidthPaginatorline() {
-	let reviewsAttrValue = Math.round(250 / (eventObject.reviews.sliderLength / eventObject.reviews.currentSlide));
-	$(".reviews__paginator-line-gradient").attr('width', reviewsAttrValue);
-	$("#paint0_linear").attr('x2', reviewsAttrValue);
+function changeWidthPaginatorline(line, parent, value) {
+	let reviewsAttrValue = Math.round(250 / (value));
+	$(parent).attr('width', reviewsAttrValue);
+	$(line).attr('x2', reviewsAttrValue);
+}
+// check window width
+function checkWindowWidthAndProperties() {
+	checkSliderPropertiesforReviewsPhone();
+	checkCurrentSlideforReviewsPhone();
+	changeWidthPaginatorline('#paint0_linear1', '.reviews__paginator-line-gradient1', eventObject.reviewsPhone.sliderLength / eventObject.reviewsPhone.currentSlide);
 }
 
 // PopUp 
@@ -179,34 +227,69 @@ $(document).ready(function () {
 
 
 	// Slider for reviews
+
 	checkSliderPropertiesforReviews();
 	checkCurrentSlideforReviews();
-	changeWidthPaginatorline();
+	changeWidthPaginatorline('#paint0_linear', '.reviews__paginator-line-gradient', eventObject.reviews.sliderLength / eventObject.reviews.currentSlide);
+
 	$(".reviews__prev").on("click", function () {
 		if (!($(".reviews__prev").hasClass('disabled'))) {
-			$($('.reviews__carousel-item[data-slide-number="' + (eventObject.reviews.currentSlide - 1) + '"]')[0]).removeClass('unvisible');
-			$($('.reviews__carousel-item[data-slide-number="' + (eventObject.reviews.currentSlide) + '"]')[0]).addClass('unvisible');
+			$($('.reviews__container-for-items .reviews__carousel-item[data-slide-number="' + (eventObject.reviews.currentSlide - 1) + '"]')[0]).removeClass('unvisible');
+			$($('.reviews__container-for-items .reviews__carousel-item[data-slide-number="' + (eventObject.reviews.currentSlide) + '"]')[0]).addClass('unvisible');
 			new WOW().init();
 		}
 		checkSliderPropertiesforReviews();
 		checkCurrentSlideforReviews();
 		checkSlideNumberNextforReviews();
 		checkSlideNumberPrevforReviews();
-		changeWidthPaginatorline();
+		changeWidthPaginatorline('#paint0_linear', '.reviews__paginator-line-gradient', eventObject.reviews.sliderLength / eventObject.reviews.currentSlide);
 	});
 
 	$(".reviews__next").on("click", function (e) {
 		if (!($(".reviews__next").hasClass('disabled'))) {
-			$($('.reviews__carousel-item[data-slide-number="' + (eventObject.reviews.currentSlide) + '"]')[0]).addClass('unvisible');
-			$($('.reviews__carousel-item[data-slide-number="' + (eventObject.reviews.currentSlide + 1) + '"]')[0]).removeClass('unvisible');
+			$($('.reviews__container-for-items .reviews__carousel-item[data-slide-number="' + (eventObject.reviews.currentSlide) + '"]')[0]).addClass('unvisible');
+			$($('.reviews__container-for-items .reviews__carousel-item[data-slide-number="' + (eventObject.reviews.currentSlide + 1) + '"]')[0]).removeClass('unvisible');
 			new WOW().init();
 		}
 		checkSliderPropertiesforReviews();
 		checkCurrentSlideforReviews();
 		checkSlideNumberNextforReviews();
 		checkSlideNumberPrevforReviews();
-		changeWidthPaginatorline();
+		changeWidthPaginatorline('#paint0_linear', '.reviews__paginator-line-gradient', eventObject.reviews.sliderLength / eventObject.reviews.currentSlide);
 	});
+
+
+	// Slider for reviews phone
+	checkWindowWidthAndProperties();
+	window.addEventListener("resize", function () {
+		if (window.innerWidth < 765) {
+			checkWindowWidthAndProperties();
+		}
+	});
+	// window.addEventListener(window.innerWidth <765, alert('dfdfdfdf'));
+
+	$(".reviews__prev-phone").on("click", function () {
+		if (!($(".reviews__prev-phone").hasClass('disabled'))) {
+			$($('.reviews__container-for-items-phone .reviews__carousel-item[data-slide-number="' + (eventObject.reviewsPhone.currentSlide - 1) + '"]')[0]).removeClass('unvisible');
+			$($('.reviews__container-for-items-phone .reviews__carousel-item[data-slide-number="' + (eventObject.reviewsPhone.currentSlide) + '"]')[0]).addClass('unvisible');
+			new WOW().init();
+		}
+		checkWindowWidthAndProperties();
+		checkSlideNumberNextforReviewsPhone();
+		checkSlideNumberPrevforReviewsPhone();
+	});
+
+	$(".reviews__next-phone").on("click", function (e) {
+		if (!($(".reviews__next-phone").hasClass('disabled'))) {
+			$($('.reviews__container-for-items-phone .reviews__carousel-item[data-slide-number="' + (eventObject.reviewsPhone.currentSlide) + '"]')[0]).addClass('unvisible');
+			$($('.reviews__container-for-items-phone .reviews__carousel-item[data-slide-number="' + (eventObject.reviewsPhone.currentSlide + 1) + '"]')[0]).removeClass('unvisible');
+			new WOW().init();
+		}
+		checkWindowWidthAndProperties();
+		checkSlideNumberNextforReviewsPhone();
+		checkSlideNumberPrevforReviewsPhone();
+	});
+
 
 	// Form
 	$(".head-page__button-1, .cooperation-options__button-1, .cooperation-options__button-2").on("click", function (e) {
