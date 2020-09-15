@@ -226,10 +226,12 @@
 		max-width: 1170px;
 		max-height: 720px;
 	}
+
 	&__container-for-items-phone {
 		display: none;
 		// height: 555px;
 	}
+
 	&__carousel-item {
 		display: flex;
 		flex-direction: column;
@@ -613,7 +615,9 @@
 	}
 
 	&__item-1 {
+		// min-height: 1000px;
 		max-height: 635px;
+		
 	}
 
 	&__item-3-text-1,
@@ -633,6 +637,13 @@
 
 	&__item-3-text-1 strong {
 		color: #FF003D;
+	}
+
+
+	&__buttons-container {
+		display: flex;
+		flex-flow: column;
+		position: relative;
 	}
 
 	&__button-1,
