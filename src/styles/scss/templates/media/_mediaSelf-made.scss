@@ -1,0 +1,53 @@
+@media (max-width: 1200px) {
+	.self-made {
+		&__wrapper {
+			height: 530px;
+			background: url(styles/images/self-made/tablet/self-made_bg_photo-1.png) no-repeat;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		&__container-for-describe {
+			margin: 70px 0 0;
+		}
+
+		&__comment {
+			font-size: 18px;
+			margin-top: 20px;
+			line-height: 28px;
+		}
+
+		&__button-1 {
+			margin: 30px 0 0 0;
+			width: 280px;
+			height: 60px;
+			line-height: 18px;
+		}
+
+	}
+}
+
+
+@media (max-width: 765px) {}
+
+@media (max-width: 568px) {}
+
+@media (max-width: 400px) {
+	.self-made {
+		&__wrapper {
+			height: 555px;
+			background: url(styles/images/self-made/tablet/self-made_bg_photo-1.png) no-repeat;
+			background-position: top 70px right;
+			background-size: cover;
+		}
+
+		&__container-for-describe {
+			margin: 50px 0 0;
+		}
+
+		&__button-1 {
+			margin: 20px 0 0 0;
+		}
+
+	}
+}

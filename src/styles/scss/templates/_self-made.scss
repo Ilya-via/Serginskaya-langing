@@ -1,6 +1,4 @@
 .self-made-buttons {
-
-
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -60,7 +58,7 @@
 .self-made {
 	&__wrapper {
 		height: 676px;
-		background: url(styles/images/self-made/self-made_bg.png) no-repeat center center;
+		background: url(styles/images/self-made/self-made_bg.png) no-repeat;
 		background-position: center center;
 		background-size: cover;
 	}
@@ -78,13 +76,17 @@
 	&__button-1 {
 		margin: 40px 0 0 0;
 		width: 300px;
-		height: 50px;
+		height: 60px;
 		background: linear-gradient(88.48deg, #FF0000 -19.67%, #822EED 100%);
 		border: 0;
 		font-size: 14px;
-		line-height: 16px;
+		line-height: 20px;
 		color: #FFFFFF;
 		text-transform: uppercase;
+	}
+	&__button-1:hover {
+		cursor: pointer;
+		filter: drop-shadow(0px 10px 20px rgba(255, 0, 61, 0.8));
 	}
 }
 

@@ -16,13 +16,27 @@
 			<div class="container__fhd">
 				<div class="self-made__wrapper">
 					<div class="container__hd">
+						<div class="header__hamburger" id="hamburger">
+							<a id="hamburger-icon" href="#">
+								<span class="line line-1"></span>
+								<span class="line line-2"></span>
+								<span class="line line-3"></span>
+							</a>
+						</div>
 						<nav class="self-made__navigation">
-							<ul class="self-made__navigation-desktop">
-								<li><a href="#">Ваши результаты</a></li>
-								<li><a href="#">О программе</a></li>
-								<li><a href="#">Структура</a></li>
-								<li><a href="#">Стоимость</a></li>
-								<li><a href="#">Контакты</a></li>
+							<ul class="header__menu-tablet">
+								<li><a href="#your-results">Ваши результаты</a></li>
+								<li><a href="#program-for-you">О программе</a></li>
+								<li><a href="#program-structure">Структура</a></li>
+								<li><a href="#coaching-support">Стоимость</a></li>
+								<li><a href="#footer">Контакты</a></li>
+							</ul>
+							<ul class="head-page__navigation-desktop">
+								<li><a href="#your-results">Ваши результаты</a></li>
+								<li><a href="#program-for-you">О программе</a></li>
+								<li><a href="#program-structure">Структура</a></li>
+								<li><a href="#coaching-support">Стоимость</a></li>
+								<li><a href="#footer">Контакты</a></li>
 							</ul>
 						</nav>
 						<div class="self-made__container-for-describe">
@@ -42,7 +56,7 @@
 			</div>
 		</section>
 
-		<section class="your-results">
+		<section class="your-results unvisible" id="your-results">
 			<div class="container__fhd">
 				<div class="container__hd">
 					<h2>Ваши результаты после прохождения программы</h2>
@@ -109,7 +123,7 @@
 			</div>
 		</section>
 
-		<section class="program-for-you">
+		<section class="program-for-you unvisible" id="program-for-you">
 			<div class="container__fhd">
 				<div class="program-for-you__wrapper">
 					<div class="container__hd">
@@ -142,7 +156,7 @@
 			</div>
 		</section>
 
-		<section class="program-structure">
+		<section class="program-structure unvisible" id="program-structure">
 			<div class="container__fhd">
 				<div class="program-structure__wrapper">
 					<div class="container__hd">
@@ -212,7 +226,7 @@
 			</div>
 		</section>
 
-		<section class="coaching-support">
+		<section class="coaching-support unvisible" id="coaching-support">
 			<div class="container__fhd">
 				<div class="coaching-support__wrapper">
 					<div class="container__hd">
@@ -271,16 +285,32 @@
 
 							</div>
 						</div>
-
-
-
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<div class="order__pop-up unvisible opacityNone">
+			<div class="order__pop-up">
+				<div class="order__pop-up-image"></div>
+				<p class="order__pop-up-caption">Спасибо за обращение</p>
+				<p class="order__pop-up-text">Мы свяжемся с Вами <br> в ближайшее время</p>
+			</div>
+		</div>
+
+		<form class="form-page__container-for-form unvisible">
+			<div class="form-page__close"></div>
+			<p class="form-page__form-caption">Укажите данные <br> для связи</p>
+			<input type="name" placeholder="Имя*" maxlength="30" autocomplete="off" name="first_name"
+				class="form-page__first_name">
+			<input type="tel" placeholder="Телефон*" maxlength="30" autocomplete="off" name="phone" class="form-page__number">
+			<input type="email" placeholder="E-mail" maxlength="60" autocomplete="off" name="email" class="form-page__email">
+			<input type="text" class="form-page__comment" maxlength="500" name="message" placeholder="Комментарий"></input>
+			<button class="form-page__button-send"><span>Отправить</span></button>
+		</form>
 	</main>
 
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="container__fhd">
 			<div class="footer__wrapper">
 				<div class="container__hd">
@@ -297,10 +327,10 @@
 						<div class="footer__menu">
 							<p class="footer__caption">Меню</p>
 							<ul>
-								<li><a href="#">Ваши результаты</a></li>
-								<li><a href="#">О программе</a></li>
-								<li><a href="#">Структура</a></li>
-								<li><a href="#">Стоимость</a></li>
+								<li><a href="#your-results">Ваши результаты</a></li>
+								<li><a href="#program-for-you">О программе</a></li>
+								<li><a href="#program-structure">Структура</a></li>
+								<li><a href="#coaching-support">Стоимость</a></li>
 							</ul>
 						</div>
 						<div class="footer__social">

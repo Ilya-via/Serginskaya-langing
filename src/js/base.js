@@ -203,7 +203,6 @@ function addHiddenClass() {
 
 // Smooth scroll
 function animatedScroll(event, context) {
-	// let id = $(context).children('a').attr('href');
 	let id = $(context).attr('href');
 	console.log(context);
 	if ($(id).length > 0) {
@@ -213,7 +212,7 @@ function animatedScroll(event, context) {
 }
 
 $(document).ready(function () {
-	$('.head-page__item-3, .open-programs__item-2 a, .head-page__navigation-desktop a[href="#about-author"], .footer__menu a[href="#about-author"], .head-page__navigation-desktop a[href="#open-programs"], .footer__menu a[href="#open-programs"], .head-page__navigation-desktop a[href="#coaching-sessions"], .footer__menu a[href="#coaching-sessions"], .head-page__navigation-desktop a[href="#reviews"], .footer__menu a[href="#reviews"], .head-page__navigation-desktop a[href="#footer"], .header__menu-tablet a[href="#about-author"], .header__menu-tablet a[href="#open-programs"], .header__menu-tablet a[href="#coaching-sessions"], .header__menu-tablet a[href="#reviews"], .header__menu-tablet a[href="#footer"]').on("click", function (e) {
+	$('.head-page__item-3, .open-programs__item-2 a, .head-page__navigation-desktop a[href="#about-author"], .footer__menu a[href="#about-author"], .head-page__navigation-desktop a[href="#open-programs"], .footer__menu a[href="#open-programs"], .head-page__navigation-desktop a[href="#coaching-sessions"], .footer__menu a[href="#coaching-sessions"], .head-page__navigation-desktop a[href="#reviews"], .footer__menu a[href="#reviews"], .head-page__navigation-desktop a[href="#footer"], .header__menu-tablet a[href="#about-author"], .header__menu-tablet a[href="#open-programs"], .header__menu-tablet a[href="#coaching-sessions"], .header__menu-tablet a[href="#reviews"], .header__menu-tablet a[href="#footer"], .head-page__navigation-desktop a[href="#your-results"], .footer__menu a[href="#your-results"], .head-page__navigation-desktop a[href="#program-for-you"], .footer__menu a[href="#program-for-you"], .head-page__navigation-desktop a[href="#program-structure"], .footer__menu a[href="#program-structure"], .head-page__navigation-desktop a[href="#coaching-support"], .footer__menu a[href="#coaching-support"], .header__menu-tablet a[href="#your-results"], .header__menu-tablet a[href="#program-for-you"], .header__menu-tablet a[href="#program-structure"], .header__menu-tablet a[href="#coaching-support"]').on("click", function (e) {
 		animatedScroll(e, this);
 	});
 
@@ -225,15 +224,6 @@ $(document).ready(function () {
 	$(".head-page__item").on("mouseout", function () {
 		$(this).find(".head-page__line").removeClass('head-page__line--hover');
 	});
-	// double arrow
-	// $(".open-programs__item-1 a").on("mouseover", function () {
-	// 	$(".open-programs__double-arrow-right").css({ '-webkit-animation:': 'openProgramsArrowRight ease-in-out 1s infinite', 'animation': 'openProgramsArrowRight ease-in-out 1s infinite' });
-	// });
-	// $(".open-programs__item-1 a").on("mouseout", function () {
-	// 	$(".open-programs__double-arrow-right").css({ '-webkit-animation:': 'none', 'animation': 'none' });
-	// });
-
-
 
 	// Slider photo-Gallery
 	checkSliderProperties();
@@ -330,7 +320,6 @@ $(document).ready(function () {
 			checkWindowWidthAndProperties();
 		}
 	});
-	// window.addEventListener(window.innerWidth <765, alert('dfdfdfdf'));
 
 	$(".reviews__prev-phone").on("click", function () {
 		if (!($(".reviews__prev-phone").hasClass('disabled'))) {
@@ -356,7 +345,7 @@ $(document).ready(function () {
 
 
 	// Form
-	$(".head-page__button-1, .cooperation-options__button-1, .cooperation-options__button-2").on("click", function (e) {
+	$(".head-page__button-1, .cooperation-options__button-1, .cooperation-options__button-2, .self-made__button-1, .self-made-buttons__button-1, .self-made-buttons__button-2").on("click", function (e) {
 		$(".form-page__container-for-form").removeClass('unvisible');
 	});
 	$(".form-page__close").on("click", function (e) {
