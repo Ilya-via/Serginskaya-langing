@@ -615,9 +615,7 @@
 	}
 
 	&__item-1 {
-		// min-height: 1000px;
 		max-height: 635px;
-		
 	}
 
 	&__item-3-text-1,
@@ -1114,10 +1112,11 @@
 	footer BEGIN
 -----------------------------------------------------------------*/
 .footer {
+	background: #0D0B10;
+
 	&__wrapper {
 		position: relative;
 		height: 539px;
-		background: #0D0B10;
 	}
 
 	&__container-for-items {
