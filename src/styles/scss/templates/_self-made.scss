@@ -294,7 +294,6 @@
 
 	&__container-for-items {
 		overflow: hidden;
-
 	}
 
 	h2 {
@@ -337,11 +336,9 @@
 		background-size: cover;
 	}
 
-	&__item-1-text,
-	&__item-2-text,
-	&__item-3-text,
-	&__item-4-text {
+	&__item-1-text {
 		margin-bottom: 20px;
+		line-height: 26px;
 	}
 
 	&__item-1 {
@@ -402,6 +399,9 @@
 -----------------------------------------------------------------*/
 .coaching-support {
 	margin: 0 0 130px 0;
+	h2 {
+		margin: 0 0 50px;
+	}
 	&__container-for-items {
 		display: flex;
 		justify-content: space-between;
@@ -415,6 +415,7 @@
 	}
 
 	&__item-1 {
+		position: relative;
 		max-width: 470px;
 		padding: 30px 30px 35px 30px;
 		background: linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
