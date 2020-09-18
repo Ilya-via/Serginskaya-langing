@@ -345,7 +345,7 @@ $(document).ready(function () {
 
 
 	// Form
-	$(".head-page__button-1, .cooperation-options__button-1, .cooperation-options__button-2, .self-made__button-1, .self-made-buttons__button-1, .self-made-buttons__button-2").on("click", function (e) {
+	$(".head-page__button-1, .cooperation-options__button-1, .cooperation-options__button-2, .self-made__button-1, .self-made-buttons__button-1, .self-made-buttons__button-2, .good-job__button-1").on("click", function (e) {
 		$(".form-page__container-for-form").removeClass('unvisible');
 	});
 	$(".form-page__close").on("click", function (e) {

@@ -1,6 +1,150 @@
+@media (max-width: 1200px) {
+	.program-structure-good-job {
+		margin: 100px 0 120px 0;
+
+		&__container-for-items {
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+
+		&__container-for-three-items {
+			display: flex;
+			justify-content: center;
+		}
+
+		h2 {
+			margin-bottom: 35px;
+		}
+
+		ul li {
+			margin-bottom: 8px;
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+
+		h3 {
+			margin: 25px 0 10px;
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		&__item-caption {
+			font-size: 24px;
+			line-height: 34px;
+			margin: 0 0 20px 0;
+		}
+
+		&__note {
+			margin-top: 15px;
+		}
+
+		&__time {
+			margin: 5px 0 20px 30px;
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		&__time::before {
+			margin: 2px 0 0 0;
+			left: 35px;
+			width: 20px;
+			height: 20px;
+		}
+
+		&__item-1-text {
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		&__item-1 {
+			margin-right: 30px;
+			max-width: 360px;
+			background: url(styles/images/icons/program-structure_module_1.svg) no-repeat top 15px center, url(styles/images/want-good-job/program-structure-good-job-bg-item_1.png) no-repeat center center, linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+			background-size: 95%, cover, cover;
+		}
+
+		&__item-2 {
+			max-width: 360px;
+			min-height: 810px;
+			background: url(styles/images/icons/program-structure_module_2.svg) no-repeat top 15px center, url(styles/images/want-good-job/program-structure-good-job-bg-item_2.png) no-repeat center center, linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+			background-size: 95%, cover, cover;
+		}
+
+		&__item-3 {
+			margin-top: 30px;
+			max-width: 360px;
+			min-height: 670px;
+			background: url(styles/images/icons/program-structure_module_3.svg) no-repeat top 15px center, url(styles/images/want-good-job/program-structure-good-job-bg-item_3.png) no-repeat center center, linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+			background-size: 95%, cover, cover;
+		}
+
+		&__item-4 {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+			max-width: 750px;
+			width: 100%;
+			padding: 70px 35px 35px;
+			background: url(styles/images/icons/program-structure_module_4.svg) no-repeat top 15px right 15px, url(styles/images/want-good-job/program-structure-good-job-bg-item_4.png) no-repeat center center, linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+			background-size: 318px, cover, cover;
+
+			.program-structure-good-job__time::before {
+				left: 35px;
+			}
+		}
+
+		&__item-1,
+		&__item-2,
+		&__item-3,
+		&__item-4 {
+			margin-bottom: 10px;
+		}
+
+		&__item-1,
+		&__item-2,
+		&__item-3 {
+			padding: 100px 10px 35px 35px;
+		}
+
+		&__item-4-block-1 {
+			max-width: 300px;
+		}
+
+		&__item-4-block-2 {
+			margin-top: 105px;
+			max-width: 285px;
+		}
+
+		.describe-item__arrow {
+			li::before {
+				margin: calc(1em * 1.55 * 0.3) 0 0 -25px;
+			}
+		}
+	}
+}
+
 @media (max-width: 800px) {
 
-		.your-results-good-job {
+	.self-made,
+	.good-job {
+		&__container-for-describe {
+			margin: 70px 0 0;
+		}
+
+		&__comment {
+			font-size: 18px;
+			line-height: 28px;
+		}
+
+		&__button-1 {
+			width: 280px;
+			height: 50px;
+		}
+	}
+
+	.your-results-good-job {
 		&__container-for-describe {
 			margin: 60px 0 0 0;
 			height: 540px;
@@ -9,4 +153,162 @@
 			background-size: cover;
 		}
 	}
+
+	.cost-of-individual-program {
+		margin: 80px 0 90px;
+
+		p,
+		li {
+			color: #FFFFFF;
+		}
+
+		ul {
+			max-width: 370px;
+
+			li {
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+
+		&__container-for-items {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__container-for-price {
+			max-width: 340px;
+			margin: 40px 0 0 0;
+		}
+
+		&__price-describe {
+			font-size: 24px;
+			line-height: 40px;
+		}
+
+		&__price {
+			// margin: 20px 0 0 0;
+			font-size: 36px;
+			line-height: 46px;
+		}
+
+		&__item-2 {
+			margin: 150px 0 0 0;
+		}
+
+		&__icon-double-arrow {
+			position: absolute;
+			transform: rotate(180deg);
+			top: -160px;
+			width: 132px;
+			height: 132px;
+			background: url(styles/images/icons/cooperation-options_icon-double-arrow.svg) no-repeat center center;
+			background-position: center center;
+			background-size: cover;
+			-webkit-animation: goodJobDownArrow ease-in-out 1.7s infinite;
+			animation: goodJobDownArrow ease-in-out 1.7s infinite;
+		}
+	}
 }
+
+@media (max-width: 765px) {
+
+	.self-made,
+	.good-job {
+		&__container-for-describe {
+			margin: 60px 0 0;
+		}
+	}
+
+	.good-job {
+		&__wrapper {
+			height: 555px;
+			margin: -10px 0 0 0;
+			padding-top: 10px;
+		}
+	}
+
+	.program-structure-good-job {
+		margin: 80px 0 80px 0;
+
+		&__container-for-items {
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+
+		&__container-for-three-items {
+			display: flex;
+			justify-content: flex-start;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+
+		&__item-1 {
+			margin-right: 0;
+			max-width: 300px;
+			background: url(styles/images/icons/program-structure_module_1.svg) no-repeat top 15px center, url(styles/images/want-good-job/program-structure-good-job-bg-item_1.png) no-repeat center center, linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+			background-size: 95%, cover, cover;
+		}
+
+		&__item-2 {
+			max-width: 300px;
+			min-height: 400px;
+			background: url(styles/images/icons/program-structure_module_2.svg) no-repeat top 15px center, url(styles/images/want-good-job/program-structure-good-job-bg-item_2.png) no-repeat center center, linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+			background-size: 95%, cover, cover;
+		}
+
+		&__item-3 {
+			margin-top: 0;
+			max-width: 300px;
+			min-height: 600px;
+			background: url(styles/images/icons/program-structure_module_3.svg) no-repeat top 15px center, url(styles/images/want-good-job/program-structure-good-job-bg-item_3.png) no-repeat center center, linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+			background-size: 95%, cover, cover;
+		}
+
+		&__item-4 {
+			flex-flow: column;
+			align-items: center;
+			justify-content: flex-start;
+			margin-top: 20px;
+			max-width: 750px;
+			width: 300px;
+			padding: 65px 35px 35px;
+			background: url(styles/images/icons/program-structure_module_4.svg) no-repeat top 15px center, url(styles/images/want-good-job/program-structure-good-job-bg-item_4.png) no-repeat center center, linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
+			background-size: 95%, cover, cover;
+		}
+
+		&__item-1,
+		&__item-2,
+		&__item-3,
+		&__item-4 {
+			margin-bottom: 20px;
+		}
+
+		&__item-1,
+		&__item-2,
+		&__item-3 {
+			padding: 65px 10px 35px 35px;
+		}
+
+
+		&__item-4-block-2 {
+			margin-top: 10px;
+		}
+
+		.describe-item__arrow {
+			li::before {
+				margin: calc(1em * 1.55 * 0.3) 0 0 -25px;
+			}
+		}
+	}
+
+	.cost-of-individual-program {
+		margin: 80px 0;
+	}
+}
+
+
+@media (max-width: 568px) {}
+
+@media (max-width: 400px) {}
