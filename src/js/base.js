@@ -225,7 +225,7 @@ $(document).ready(function () {
 		$(this).find(".head-page__line").removeClass('head-page__line--hover');
 	});
 
-	// Slider photo-Gallery
+	// Slider photo-Gallery слайдеры :) - плакать кровавыми слезами, прости бро.
 	checkSliderProperties();
 	checkCurrentSlide();
 	$(".photo-gallery__prev").on("click", function () {
