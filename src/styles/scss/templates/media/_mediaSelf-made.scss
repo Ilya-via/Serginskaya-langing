@@ -42,7 +42,8 @@
 
 	}
 
-	.your-results {
+	.your-results,
+	.your-results-good-job {
 		margin: 80px 0 0;
 
 		&__icon-double-arrow-big {
@@ -262,6 +263,17 @@
 
 @media (max-width: 800px) {
 	.your-results {
+		&__container-for-describe {
+			margin: 60px 0 0 0;
+			height: 580px;
+			background: url(styles/images/self-made/tablet/your-results_bg_photo-1.png) no-repeat;
+			background-position: center center;
+			background-size: cover;
+		}
+	}
+
+	.your-results,
+	.your-results-good-job {
 
 		h2 {
 			max-width: 1000px;
@@ -293,15 +305,6 @@
 
 		&__icon-double-arrow-big {
 			display: none;
-		}
-
-
-		&__container-for-describe {
-			margin: 60px 0 0 0;
-			height: 580px;
-			background: url(styles/images/self-made/tablet/your-results_bg_photo-1.png) no-repeat;
-			background-position: center center;
-			background-size: cover;
 		}
 
 		&__container-for-text {
@@ -523,7 +526,9 @@
 }
 
 @media (max-width: 568px) {
-	.your-results {
+
+	.your-results,
+	.your-results-good-job {
 		margin: 80px 0 270px;
 
 		&__container-for-items {
@@ -581,6 +586,7 @@
 
 	.program-structure {
 		margin: 0 0 60px 0;
+
 		h2 {
 			margin-bottom: 30px;
 		}

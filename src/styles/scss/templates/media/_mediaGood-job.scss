@@ -1,0 +1,12 @@
+@media (max-width: 800px) {
+
+		.your-results-good-job {
+		&__container-for-describe {
+			margin: 60px 0 0 0;
+			height: 540px;
+			// background: url(styles/images/self-made/tablet/your-results_bg_photo-1.png) no-repeat;
+			background-position: center right;
+			background-size: cover;
+		}
+	}
+}

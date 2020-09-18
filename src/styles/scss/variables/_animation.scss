@@ -127,3 +127,15 @@
 	30% {left: -10px;}
 	100% {left: -40px;}
 }
+
+// Good job page
+@-webkit-keyframes goodJobDownArrow {
+	0% {top: -180px;}
+	30% {top: -150px;}
+	100% {top: -180px;}
+}
+@keyframes goodJobDownArrow {
+	0% {top: -180px;}
+	30% {top: -150px;}
+	100% {top: -180px;}
+}
