@@ -266,7 +266,7 @@
 
 	.open-programs {
 		&__container-for-items {
-			margin-top: 180px;
+			margin-top: 160px;
 			align-items: center;
 		}
 
@@ -289,13 +289,15 @@
 		}
 
 		p {
+			display: inline;
 			max-width: 520px;
 			font-size: 18px;
 			line-height: 21px;
 		}
 
 		&__item-1,
-		&__item-2 {
+		&__item-2,
+		&__item-3 {
 			width: 586px;
 			height: 100px;
 			padding: 0 30px;
@@ -314,15 +316,19 @@
 			margin: 0 0 30px 75px;
 			background: url(styles/images/head-page/self-made_bg.png) no-repeat center center;
 			background-size: cover;
+
+			p {
+				max-width: 360px;
+			}
 		}
 
-		&__item-2 {
-			background: url(styles/images/head-page/coach-session_bg.png) no-repeat center center;
-			background-size: cover;
+		&__item-3 {
+			margin: 0 0 30px 75px;
 		}
 
 		&__double-arrow-down,
-		&__double-arrow-right {
+		&__double-arrow-right,
+		&__double-arrow-right-2 {
 			background: url(styles/images/icons/open-programs_double_arrow_pink.svg) no-repeat center center;
 			background-size: cover;
 			width: 80px;
@@ -336,17 +342,38 @@
 			animation: openProgramsArrowDownTablet ease-in-out 1.7s infinite;
 		}
 
-		&__double-arrow-right {
+		&__double-arrow-right,
+		&__double-arrow-right-2 {
 			filter: drop-shadow(0px 0px 30px #822EED);
-			top: 10px;
 			right: 30px;
+			-webkit-animation: openProgramsArrowRight ease-in-out 1.7s infinite;
+			animation: openProgramsArrowRight ease-in-out 1.7s infinite;
 		}
+
+		&__double-arrow-right {
+			top: 10px;
+		}
+
+		&__double-arrow-right-2 {
+			top: 140px;
+		}
+
+		@media (max-width: 790px) {
+
+			&__double-arrow-right,
+			&__double-arrow-right-2 {
+				right: 5px;
+				-webkit-animation: openProgramsArrowRightTablet ease-in-out 1.7s infinite;
+				animation: openProgramsArrowRightTablet ease-in-out 1.7s infinite;
+			}
+		}
+
 	}
 
 	.coaching-sessions {
 		&__wrapper {
 			min-height: 1500px;
-			margin-top: 160px;
+			margin-top: 140px;
 			background: url(styles/images/head-page/tablet/coaching-sessions_bg_tablet.png) no-repeat center center;
 			background-position: center center;
 			background-size: cover;
@@ -913,16 +940,17 @@
 
 	.open-programs {
 		&__container-for-items {
-			margin-top: 180px;
+			margin-top: 120px;
 			align-items: center;
 		}
 
 		h2 {
-			top: -70px;
+			top: -50px;
 		}
 
 		&__item-1,
-		&__item-2 {
+		&__item-2,
+		&__item-3 {
 			width: 300px;
 			height: 150px;
 			padding: 15px 20px;
@@ -937,8 +965,11 @@
 			}
 
 		}
-
 		&__item-1 {
+			background: linear-gradient(90deg, #FF0000 -19.67%, #822EED 100%);
+		}
+		&__item-1,
+		&__item-3 {
 			margin: 0 0 30px 0;
 		}
 
@@ -946,14 +977,15 @@
 			display: none;
 		}
 
-		&__double-arrow-right {
+		&__double-arrow-right,
+		&__double-arrow-right-2 {
 			display: none;
 		}
 	}
 
 	.coaching-sessions {
 		&__wrapper {
-			margin-top: 50px;
+			margin-top: 60px;
 			padding-bottom: 20px;
 		}
 

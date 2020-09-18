@@ -74,14 +74,24 @@
 }
 
 @-webkit-keyframes openProgramsArrowRight {
-	0% {right: 20px;}
-	30% {right: -100px;}
-	100% {right: 20px;}
+	0% {right: 40px;}
+	30% {right: 20px;}
+	100% {right: 40px;}
 }
 @keyframes openProgramsArrowRight {
-	0% {right: 20px;}
-	30% {right: -100px;}
-	100% {right: 20px;}
+	0% {right: 40px;}
+	30% {right: 20px;}
+	100% {right: 40px;}
+}
+@-webkit-keyframes openProgramsArrowRightTablet {
+	0% {right: 25px;}
+	30% {right: 5px;}
+	100% {right: 25px;}
+}
+@keyframes openProgramsArrowRightTablet {
+	0% {right: 25px;}
+	30% {right: 5px;}
+	100% {right: 25px;}
 }
 
 @-webkit-keyframes cooperationOptionsArrow {
