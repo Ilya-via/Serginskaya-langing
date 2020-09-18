@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
 	.program-structure-good-job {
-		margin: 100px 0 120px 0;
+		margin: 100px 0 120px;
 
 		&__container-for-items {
 			display: flex;
@@ -9,7 +9,6 @@
 		}
 
 		&__container-for-three-items {
-			display: flex;
 			justify-content: center;
 		}
 
@@ -148,7 +147,6 @@
 		&__container-for-describe {
 			margin: 60px 0 0 0;
 			height: 540px;
-			// background: url(styles/images/self-made/tablet/your-results_bg_photo-1.png) no-repeat;
 			background-position: center right;
 			background-size: cover;
 		}
@@ -157,28 +155,9 @@
 	.cost-of-individual-program {
 		margin: 80px 0 90px;
 
-		p,
-		li {
-			color: #FFFFFF;
-		}
-
-		ul {
-			max-width: 370px;
-
-			li {
-				font-size: 16px;
-				line-height: 26px;
-			}
-		}
-
-		&__container-for-items {
-			display: flex;
-			justify-content: space-between;
-		}
-
 		&__container-for-price {
 			max-width: 340px;
-			margin: 40px 0 0 0;
+			margin: 40px 0 20px;
 		}
 
 		&__price-describe {
@@ -187,7 +166,6 @@
 		}
 
 		&__price {
-			// margin: 20px 0 0 0;
 			font-size: 36px;
 			line-height: 46px;
 		}
@@ -196,18 +174,6 @@
 			margin: 150px 0 0 0;
 		}
 
-		&__icon-double-arrow {
-			position: absolute;
-			transform: rotate(180deg);
-			top: -160px;
-			width: 132px;
-			height: 132px;
-			background: url(styles/images/icons/cooperation-options_icon-double-arrow.svg) no-repeat center center;
-			background-position: center center;
-			background-size: cover;
-			-webkit-animation: goodJobDownArrow ease-in-out 1.7s infinite;
-			animation: goodJobDownArrow ease-in-out 1.7s infinite;
-		}
 	}
 }
 
@@ -270,8 +236,7 @@
 			flex-flow: column;
 			align-items: center;
 			justify-content: flex-start;
-			margin-top: 20px;
-			max-width: 750px;
+			margin-top: 0;
 			width: 300px;
 			padding: 65px 35px 35px;
 			background: url(styles/images/icons/program-structure_module_4.svg) no-repeat top 15px center, url(styles/images/want-good-job/program-structure-good-job-bg-item_4.png) no-repeat center center, linear-gradient(212.82deg, #340077 19.6%, #FF0000 179.41%);
@@ -295,20 +260,15 @@
 		&__item-4-block-2 {
 			margin-top: 10px;
 		}
-
-		.describe-item__arrow {
-			li::before {
-				margin: calc(1em * 1.55 * 0.3) 0 0 -25px;
-			}
-		}
 	}
 
 	.cost-of-individual-program {
 		margin: 80px 0;
+
+		&__container-for-items {
+			flex-flow: column;
+			justify-content: flex-start;
+			align-self: center;
+		}
 	}
 }
-
-
-@media (max-width: 568px) {}
-
-@media (max-width: 400px) {}

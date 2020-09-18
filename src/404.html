@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="styles/images/icons/favicon.ico" type="image/x-icon">
+	<title>404 Not found</title>
+	<style>
+		@font-face {
+			font-family: "RalewayRegular";
+			src: url("styles/fonts/RalewayRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		@font-face {
+			font-family: "RalewayBold";
+			src: url("styles/fonts/RalewayBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			outline: 0;
+			background-color: #000000;
+		}
+
+		.not-found-block {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+			max-width: 1920px;
+			height: 900px;
+			background: url(styles/images/404_bg.png) no-repeat;
+			background-position: center center;
+			background-size: cover;
+			overflow-y: auto;
+			-ms-overflow-style: none;
+			-webkit-mask-image: linear-gradient(180deg, #000 0, #000 85%, rgba(0, 0, 0, 0) 100%);
+			mask-image: linear-gradient(180deg, #000 0, #000 85%, rgba(0, 0, 0, 0) 100%)
+		}
+
+		.not-found-block__container {
+			max-width: 760px;
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.not-found-block__image {
+			width: 630px;
+			height: 252px;
+			background: url(styles/images/icons/404.svg) no-repeat;
+			background-position: center center;
+			background-size: cover;
+			filter: drop-shadow(0px 0px 20px rgba(255, 0, 61, 0.3));
+		}
+
+		.not-found-block::-webkit-scrollbar {
+			width: 0;
+		}
+
+		.not-found-block__text {
+			font-family: "RalewayBold";
+			margin: 75px 0 55px;
+			font-size: 40px;
+			line-height: 60px;
+			text-align: center;
+			font-feature-settings: 'pnum'on, 'lnum'on;
+			color: #56295A;
+			text-shadow: 0px 4px 50px rgba(255, 0, 61, 0.2);
+		}
+
+		.not-found-block__button-1 {
+			display: block;
+			font-family: "RalewayRegular";
+			width: 280px;
+			height: 50px;
+			background: linear-gradient(88.48deg, #FF0000 -19.67%, #822EED 100%);
+			border: 0;
+			font-size: 16px;
+			line-height: 1.19em;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			font-feature-settings: 'pnum'on, 'lnum'on;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			letter-spacing: 0.04em;
+		}
+
+		.not-found-block__button-1:hover {
+			filter: drop-shadow(0px 4px 20px rgba(255, 0, 61, 0.6));
+		}
+
+		@media (max-width: 800px) {
+			.not-found-block {
+				height: 670px;
+			}
+
+			.not-found-block__container {
+				max-width: 620px;
+			}
+
+			.not-found-block__image {
+				width: 540px;
+				height: 216px;
+			}
+
+			.not-found-block__text {
+				font-size: 30px;
+				line-height: 40px;
+			}
+		}
+
+		@media (max-width: 600px) {
+			.not-found-block {
+				height: 495px;
+			}
+
+			.not-found-block__image {
+				width: 270px;
+				height: 108px;
+			}
+
+			.not-found-block__text {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="not-found-block">
+		<div class="not-found-block__container">
+			<div class="not-found-block__image"></div>
+			<p class="not-found-block__text">Похоже мы не можем найти нужную страницу</p>
+			<a href="/" class="not-found-block__button-1">На главную</a>
+		</div>
+	</div>
+</body>
+
+</html>
